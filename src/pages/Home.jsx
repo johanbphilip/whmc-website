@@ -1,5 +1,6 @@
 import docAndPatient from "../assets/doc-patient1.jpeg";
 import outsideClinic from "../assets/outside-clinic.jpg";
+
 export const Home = () => {
   return (
     <>
