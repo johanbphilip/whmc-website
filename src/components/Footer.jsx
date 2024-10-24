@@ -1,9 +1,7 @@
-import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 import { FaPhone, FaPrint } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
 export const Footer = () => {
-  const position = { lat: 43.8592336354078, lng: -79.04021375774072 };
   return (
     <footer className="bg-darkGreen flex flex-row text-whiteGreen justify-between py-10 px-20 font-serif">
       <div className="flex flex-col gap-2">
@@ -26,18 +24,6 @@ export const Footer = () => {
           <IoMail className="mr-3" />
           management.westeyheights@gmail.com
         </p>
-        <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
-          <Map
-            style={{ width: "full", height: "full" }}
-            defaultCenter={position}
-            defaultZoom={16}
-            gestureHandling={"greedy"}
-            disableDefaultUI={true}
-            mapId={import.meta.env.VITE_MAP_ID}
-          >
-            <AdvancedMarker position={position}></AdvancedMarker>
-          </Map>
-        </APIProvider>
       </div>
       <div className="flex flex-col w-80">
         <h2 className="font-ubuntu font-bold text-xl mb-2">Hours</h2>
