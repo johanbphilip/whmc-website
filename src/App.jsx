@@ -16,14 +16,16 @@ import {
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootLayout />} basename="/whmc-website">
+      <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="services" element={<Services />} />
         <Route path="our-team" element={<Team />} />
         <Route path="hours" element={<Hours />} />
         <Route path="plan-a-visit" element={<PlanAVisit />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
-    )
+    ),
+    { basename: "/whmc-website" } // Set basename here in options
   );
   console.log("App.jsx has been loaded");
   return <RouterProvider router={router} />;
