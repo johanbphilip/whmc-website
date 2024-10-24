@@ -22,7 +22,6 @@ function App() {
         <Route path="our-team" element={<Team />} />
         <Route path="hours" element={<Hours />} />
         <Route path="plan-a-visit" element={<PlanAVisit />} />
-        <Route path="/isf" element={<NotFound />} />
       </Route>
     )
   );
