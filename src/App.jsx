@@ -24,9 +24,9 @@ function App() {
         <Route path="plan-a-visit" element={<PlanAVisit />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-    ),
-    console.log("App.jsx has been loadded")
+    )
   );
+  console.log("App.jsx has been loaded");
   return <RouterProvider router={router} />;
 }
 
