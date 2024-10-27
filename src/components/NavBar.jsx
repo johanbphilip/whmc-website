@@ -2,14 +2,16 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <header className="flex flex-row bg-lightGreen text-whiteGreen place-items-center justify-between h-[4rem] px-10 fixed top-0 w-full z-10">
-      <h1 className="font-ubuntu font-bold text-xl">WHMC</h1>
-      <nav>
-        <ul className="flex flex-row justify-evenly font-serif font-thin">
+    <header className="flex flex-row bg-white text-darkGreen font-normal place-items-center justify-between h-20 px-14 fixed top-0 w-full z-10">
+      <nav className="flex justify-between w-full font-serif items-center">
+        <h1 className="font-ubuntu font-bold text-xl hover:text-lightGreen">
+          <NavLink to={"/"}>WHMC</NavLink>
+        </h1>
+        <ul className="flex flex-row justify-evenly gap-3 ">
           <NavLink
             to={"/"}
             className={
-              "mx-2 px-3 py-1 border border-transparent hover:border-darkGreen rounded-xl ease-in duration-200"
+              "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
             }
           >
             HOME
@@ -17,7 +19,7 @@ export const NavBar = () => {
           <NavLink
             to={"/services"}
             className={
-              "mx-2 px-3 py-1 border border-transparent hover:border-darkGreen rounded-xl ease-in duration-200"
+              "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
             }
           >
             SERVICES
@@ -25,7 +27,7 @@ export const NavBar = () => {
           <NavLink
             to={"/our-team"}
             className={
-              "mx-2 px-3 py-1 border border-transparent hover:border-darkGreen rounded-xl ease-in duration-200"
+              "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
             }
           >
             OUR TEAM
@@ -33,20 +35,20 @@ export const NavBar = () => {
           <NavLink
             to={"/hours"}
             className={
-              "mx-2 px-3 py-1 border border-transparent hover:border-darkGreen rounded-xl ease-in duration-200"
+              "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
             }
           >
             HOURS{" "}
           </NavLink>
-          <NavLink
-            to={"/plan-a-visit"}
-            className={
-              "mx-2 bg-darkGreen px-3 py-1 border border-transparent hover:border-darkGreen hover:bg-transparent rounded-xl ease-in duration-200"
-            }
-          >
-            PLAN A VISIT
-          </NavLink>
         </ul>
+        <NavLink
+          to={"/plan-a-visit"}
+          className={
+            " bg-darkGreen text-white px-5 py-1 border hover:border-lightGreen hover:text-lightGreen hover:bg-transparent rounded-xl ease-in duration-200"
+          }
+        >
+          PLAN A VISIT
+        </NavLink>
       </nav>
     </header>
   );

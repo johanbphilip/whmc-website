@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
         serif: ["Montserrat", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
       },
