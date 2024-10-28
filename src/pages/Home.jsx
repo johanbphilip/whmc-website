@@ -9,7 +9,7 @@ export const Home = () => {
       <main className="mt-20 flex flex-col ">
         <section className="bg-gradient-to-t from-darkGreen to-lightGreen w-full place-items-center py-20 px-14 text-darkGreen flex justify-between rounded-b-lg">
           <div className="">
-            <h1 className="font-ubuntu font-bold text-6xl text-whiteGreen leading-tight mb-10">
+            <h1 className="font-ubuntu font-bold text-6xl text-white leading-tight mb-10">
               <span className="font-thin"> Welcome to</span>
               <br />
               Westney Heights
@@ -19,7 +19,7 @@ export const Home = () => {
             <NavLink
               to={"/plan-a-visit"}
               className={
-                "font-serif font-medium bg-white px-5 py-2 hover:bg-lightGreen hover:bg-transparent hover:text-whiteGreen rounded-xl ease-in duration-200"
+                "font-serif font-medium bg-white px-5 py-2 hover:bg-lightGreen hover:bg-transparent hover:text-white rounded-xl ease-in duration-200"
               }
             >
               PLAN A VISIT

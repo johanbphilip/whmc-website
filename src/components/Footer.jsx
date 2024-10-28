@@ -3,7 +3,7 @@ import { IoMail } from "react-icons/io5";
 
 export const Footer = () => {
   return (
-    <footer className="bg-darkGreen flex flex-row text-whiteGreen justify-between py-10 px-20 font-serif">
+    <footer className="bg-darkGreen flex flex-row text-white justify-between py-10 px-14 font-serif">
       <div className="flex flex-col gap-2">
         <h2 className="font-ubuntu font-bold text-xl">
           Westney Heights Medical Centre
