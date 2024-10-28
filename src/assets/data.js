@@ -60,7 +60,7 @@ export const services = [
     name: "TB Test",
     description:
       "TB tests vary in cost based on the steps and the purpose. The 2-step test requires 4 visits whereas the 1-step requires 2 visits. If the TB test is for work, it is a $30 charge per visit, for school or volunteering, it is covered by OHIP.",
-    cost: "$30 (work) | Covered by OHIP (school)",
+    cost: "Dependent on reason",
     image: tbPhoto,
   },
   {
@@ -86,7 +86,7 @@ export const services = [
     name: "Sick Notes",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias deserunt vel. Ab iure laboriosam dignissimos nobis aspernatur, porro sed ipsum? Tenetur at, corrupti dolorem eum minus quibusdam quae consequatur?",
-    cost: "$10",
+    cost: "$20",
   },
   {
     name: "Ear Flush",
