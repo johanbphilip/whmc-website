@@ -1,4 +1,4 @@
-import { FaPhone, FaPrint } from "react-icons/fa6";
+import { FaPhone, FaPrint, FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
 export const Footer = () => {
@@ -9,7 +9,10 @@ export const Footer = () => {
           Westney Heights Medical Centre
         </h2>
         <hr className="opacity-75 border-dashed border-lightGreen" />
-        <p>15 Westney Road N &#35;2, Ajax, ON, L1T 1P4</p>
+        <p className="flex place-items-center">
+          <FaLocationDot className="mr-2 size-5" />
+          15 Westney Road N &#35;2, Ajax, ON, L1T 1P4{" "}
+        </p>
         <h2 className="font-ubuntu font-bold text-xl">Contact Information</h2>
         <hr className="opacity-75 border-dashed border-lightGreen" />
         <p className="flex place-items-center">
@@ -31,7 +34,7 @@ export const Footer = () => {
         <div className="flex flex-row">
           <div className="flex flex-col">
             <p className="my-1">Monday</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1">Tuesday</p>
             <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1">Wednesday</p>
@@ -45,17 +48,17 @@ export const Footer = () => {
           </div>
           <div className="text-right flex flex-col">
             <p className="my-1">8am - 4pm</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1 text-right">8am - 2pm</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1">8am - 4pm</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1">8am - 4pm</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1">8am - 2pm</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
             <p className="my-1">8am - 2pm</p>
-            <hr className="border-opacity-75 border-lightGreen w-40 m-0" />
+            <hr className="border-opacity-75 border-lightGreen w-40" />
           </div>
         </div>
       </div>
