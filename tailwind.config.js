@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      xs: "320px", // Custom small breakpoint
+      xs: "320px", // Custom extra-small breakpoint
       sm: "640px", // Default Tailwind breakpoint
       md: "768px", // Default Tailwind breakpoint
       lg: "1024px", // Default Tailwind breakpoint
@@ -12,7 +12,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Montserrat", "sans-serif"],
+        serif: ["Montserrat", "sans-serif"], // in future change to the font name itself
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       colors: {
