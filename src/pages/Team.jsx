@@ -1,5 +1,5 @@
 import defaultProfile from "../assets/profile-pic-default.jpg";
-import { doctors as doctorsProfile } from "../assets/data.js";
+import { doctors as doctorsProfile } from "../assets/data.jsx";
 import { useState } from "react";
 
 export const Team = () => {

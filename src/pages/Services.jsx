@@ -1,10 +1,10 @@
-import { services } from "../assets/data";
+import { services } from "../assets/data.jsx";
 import { ServiceBlock } from "../components/ServiceBlock";
 import { FiExternalLink } from "react-icons/fi";
 
 export const Services = () => {
   return (
-    <main className="mt-20 place-items-center py-20 px-10 text-darkGreen font-serif min-h-screen">
+    <main className="mt-20 place-items-center py-20 px-14 text-darkGreen font-serif min-h-screen">
       <section className="grid gap-5 xs:grid-cols-2 md:grid-cols-4 ">
         <h1 className="font-ubuntu font-bold text-6xl col-span-2 xs:grid xs:grid-cols-2 xs:gap-5 md:col-span-3 md:text-7xl lg:text-8xl lg:col-span-2">
           Our Services.
