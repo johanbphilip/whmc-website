@@ -9,11 +9,11 @@ export const Hours = () => {
         Our Hours.
       </h1>
       <section className="grid xs:grid-rows-2 md:grid-rows-1 md:grid-cols-2 xs:text-[10px] md:text-xs lg:text-lg">
-        <div className="flex flex-col xs:gap-1 lg:gap-3 bg-lightGreen text-white xs:p-3 md:p-6 lg:p-20 xs:row-start-2 md:row-start-1">
+        <div className="flex flex-col xs:gap-1 lg:gap-3 bg-lightGreen text-white xs:p-3 md:p-6 lg:p-20 xs:row-start-2 md:row-start-1 place-items-center">
           <h2 className="font-ubuntu xs:text-base md:text-lg lg:text-4xl font-bold">
             Hours
           </h2>
-          <div className="flex flex-row lg:w-1/2">
+          <div className="flex flex-row xs:w-3/4 lg:w-4/5">
             <div className="flex flex-col xs:w-1/2">
               <p className="my-1">Monday</p>
               <hr className="border-opacity-75 border-white w-full" />
@@ -58,15 +58,15 @@ export const Hours = () => {
             <IoMail className="mr-3" />
             management.westneyheights@gmail.com
           </p>
-          <p className="font-bold md:text-lg lg:text-xl my-4">
+          <p className="font-bold md:text-lg lg:text-xl xs:my-2 md:my-4">
             Visits are by walk-in only.
           </p>
-          <p className=" lg:text-base">
+          <p className="lg:text-base text-center">
             Patients are seen Monday through Sunday starting at 8am. Closing
             times may vary from posted hours depending on clinic capacity and
             wait times.
           </p>
-          <p className="lg:text-base">
+          <p className="lg:text-base text-center">
             Patients can contact the clinic to find out the exact closing time
             and wait times for each day.
           </p>

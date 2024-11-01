@@ -29,8 +29,11 @@ export const Home = () => {
           className="rounded-lg xs:w-[12rem] xs:h-[8rem] md:w-80 md:h-44 lg:w-[40rem] lg:h-auto xs:object-center-top  object-cover"
         />
       </section>
-      <section className="w-full font-serif place-items-center py-10 xs:px-3 md:px-6 lg:px-14 text-darkGreen grid xs:grid-rows-4 xs:gap-4 md:grid-cols-2 md:grid-rows-2 md:gap-10">
-        <img src={docAndPatient} className="rounded-xl w-full object-cover" />
+      <section className="w-full font-serif place-items-center xs:py-6 md:py-10 xs:px-3 md:px-6 lg:px-14 text-darkGreen grid xs:grid-rows-4 xs:gap-2 md:grid-cols-2 md:grid-rows-2 md:gap-10">
+        <img
+          src={docAndPatient}
+          className="rounded-xl xs:h-3/4 md:h-full object-cover"
+        />
         <div className="text-left xs:text-xs md:text-md lg:text-lg flex flex-col gap-3">
           <h1 className="font-ubuntu font-bold xs:text-xl md:text-4xl lg:text-6xl text-lightGreen">
             <span className="text-darkGreen"> Your Health </span>
@@ -78,7 +81,10 @@ export const Home = () => {
             more item?
           </p>
         </div>
-        <img src={docAndPatient} className="rounded-xl h-full object-cover" />
+        <img
+          src={docAndPatient}
+          className="rounded-xl xs:h-3/4 md:h-full object-cover"
+        />
       </section>
       <div
         className="xs:h-[25vh]  md:h-[52vh] bg-fixed bg-top xs:bg-fit lg:bg-center bg-cover bg-darkGreen bg-opacity-50 bg-blend-multiply"

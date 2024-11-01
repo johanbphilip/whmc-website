@@ -39,8 +39,8 @@ export const Footer = () => {
           </a>
         </p>
       </div>
-      <div className="flex flex-col xs:w-full md:w-80">
-        <h2 className="font-ubuntu font-bold xs:text-base lg:text-xl mb-2">
+      <div className="flex flex-col xs:w-3/4 md:w-80">
+        <h2 className="font-ubuntu font-bold xs:text-center xs:text-base lg:text-xl mb-2">
           Hours
         </h2>
         <hr className="opacity-75 border-dashed border-lightGreen" />
