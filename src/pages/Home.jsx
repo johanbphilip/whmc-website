@@ -6,8 +6,8 @@ import { BiSolidBadgeCheck } from "react-icons/bi";
 export const Home = () => {
   return (
     <main className="xs:mt-10 md:mt-20 flex flex-col">
-      <section className="bg-gradient-to-t from-darkGreen to-lightGreen w-full place-items-center xs:py-10 md:py-20 xs:px-3 md:px-6 lg:px-14 text-darkGreen flex justify-between rounded-b-lg align-middle">
-        <div className="xs:mr-5 lg:mr-0">
+      <section className="bg-gradient-to-t from-darkGreen to-lightGreen w-full place-items-center xs:py-20 md:py-20 xs:px-3 md:px-6 lg:px-14 text-darkGreen flex justify-between rounded-b-lg align-middle">
+        <div className="xs:mr-3 lg:mr-0">
           <h1 className="font-ubuntu font-bold xs:text-xl md:text-3xl lg:text-6xl text-white leading-tight mb-10">
             <span className="font-thin"> Welcome to</span>
             <br />
@@ -26,13 +26,13 @@ export const Home = () => {
         </div>
         <img
           src={docAndPatient}
-          className="rounded-lg xs:w-[12rem] xs:h-[8rem] md:w-80 md:h-44 lg:w-[40rem] lg:h-auto xs:object-center-top  object-cover"
+          className="rounded-lg xs:w-[9rem] xs:h-[8rem] md:w-80 md:h-44 lg:w-[40rem] lg:h-auto xs:object-center-top  object-cover"
         />
       </section>
-      <section className="w-full font-serif place-items-center xs:py-6 md:py-10 xs:px-3 md:px-6 lg:px-14 text-darkGreen grid xs:grid-rows-4 xs:gap-2 md:grid-cols-2 md:grid-rows-2 md:gap-10">
+      <section className="w-full font-serif place-items-center xs:py-6 md:py-10 xs:px-3 md:px-6 lg:px-14 text-darkGreen grid xs:grid-cols-1 xs:gap-4 md:grid-cols-2 md:gap-10">
         <img
           src={docAndPatient}
-          className="rounded-xl xs:h-3/4 md:h-full object-cover"
+          className="rounded-xl w-full h-auto object-cover"
         />
         <div className="text-left xs:text-xs md:text-md lg:text-lg flex flex-col gap-3">
           <h1 className="font-ubuntu font-bold xs:text-xl md:text-4xl lg:text-6xl text-lightGreen">
@@ -83,7 +83,7 @@ export const Home = () => {
         </div>
         <img
           src={docAndPatient}
-          className="rounded-xl xs:h-3/4 md:h-full object-cover"
+          className="rounded-xl w-full h-auto object-cover"
         />
       </section>
       <div

@@ -5,7 +5,7 @@ import { useState } from "react";
 export const Team = () => {
   const [doctors, setDoctors] = useState(doctorsProfile);
   return (
-    <main className="xs:mt-10 md:mt-20 flex flex-col place-items-center xs:py-10 xs:px-3 md:px-6 lg:px-72 lg:py-20  text-darkGreen font-serif">
+    <main className="xs:mt-10 md:mt-20 flex flex-col place-items-center xs:py-10 xs:px-10 md:px-6 lg:px-60 lg:py-20  text-darkGreen font-serif">
       <h1 className="font-ubuntu font-bold xs:text-4xl md:text-6xl xs:mb-10 md:mb-20">
         Our Team.
       </h1>

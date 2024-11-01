@@ -4,9 +4,9 @@ import { FiExternalLink } from "react-icons/fi";
 
 export const Services = () => {
   return (
-    <main className="xs:mt-10 md:mt-20 xs:py-10 place-items-center lg:py-20 xs:px-3 md:px-6 lg:px-14 text-darkGreen font-serif">
-      <section className="grid xs:gap-5 md:gap-3 xs:grid-cols-2 md:grid-cols-4 xs:w-full md:w-4/5">
-        <h1 className="font-ubuntu font-bold xs:mb-5 xs:text-4xl col-span-2 md:text-7xl lg:text-8xl lg:col-span-2">
+    <main className="xs:mt-10 md:mt-20 xs:py-10 lg:py-20 xs:px-3 md:px-8 lg:px-14 text-darkGreen font-serif flex justify-center">
+      <section className="grid xs:gap-5 md:gap-3 grid-cols-2 md:grid-cols-4 xs:w-full md:w-full lg:w-4/5">
+        <h1 className="font-ubuntu font-bold xs:mb-5 xs:text-4xl col-span-2 md:text-7xl lg:text-8xl">
           Our Services.
         </h1>
         <p className="xs:row-start-2 xs:col-start-2 xs:self-center xs:text-xs md:text-md lg:text-lg md:col-start-1 md:col-span-2 lg:col-span-1 ">
