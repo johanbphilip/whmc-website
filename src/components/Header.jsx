@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row bg-white text-darkGreen font-normal place-items-center justify-between xs:h-10 md:h-20 xs:px-3 md:px-6 lg:px-14 fixed top-0 w-full z-10">
+      <header className="flex flex-row bg-white text-darkGreen font-normal place-items-center justify-between xs:h-10 md:h-20 xs:px-5 md:px-6 lg:px-14 fixed top-0 w-full z-10">
         <NavBar />
         <h1 className="font-ubuntu font-bold text-xl hover:text-lightGreen xs:block lg:hidden">
           <NavLink to={"/"}>WHMC</NavLink>
