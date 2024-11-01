@@ -8,12 +8,12 @@ export const ServiceBlock = ({ service }) => {
         src={service.image || docAndPatient}
         className=" w-full h-[75%] object-cover"
       ></img>
-      <hr className="border-lightGreen" />
+      <hr className="border-lightGreen xs:hidden lg:block" />
       <div>
-        <h1 className="font-ubuntu font-bold text-2xl md:text-xl lg:text-2xl">
+        <h1 className="font-ubuntu font-bold xs:text-md md:text-md lg:text-2xl">
           {service.name}
         </h1>
-        <p className="text-md opacity-80">
+        <p className="xs:text-xs md:text-md lg:text-lg opacity-80">
           <span className="font-ubuntu font-bold">Cost: </span> {service.cost}
         </p>
       </div>

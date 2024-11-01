@@ -5,10 +5,10 @@ import { BiSolidBadgeCheck } from "react-icons/bi";
 
 export const Home = () => {
   return (
-    <main className="mt-20 flex flex-col">
-      <section className="bg-gradient-to-t from-darkGreen to-lightGreen w-full place-items-center py-20 px-14 text-darkGreen flex justify-between rounded-b-lg">
-        <div>
-          <h1 className="font-ubuntu font-bold text-6xl text-white leading-tight mb-10">
+    <main className="xs:mt-10 md:mt-20 flex flex-col">
+      <section className="bg-gradient-to-t from-darkGreen to-lightGreen w-full place-items-center py-20 xs:px-3 md:px-6 lg:px-14 text-darkGreen flex md:justify-between rounded-b-lg">
+        <div className="xs:mr-5 lg:mr-0">
+          <h1 className="font-ubuntu font-bold xs:text-xl md:text-3xl lg:text-6xl text-white leading-tight mb-10">
             <span className="font-thin"> Welcome to</span>
             <br />
             Westney Heights
@@ -18,27 +18,28 @@ export const Home = () => {
           <NavLink
             to={"/plan-a-visit"}
             className={
-              "font-serif font-medium bg-white px-5 py-2 hover:bg-lightGreen hover:bg-transparent hover:text-white rounded-xl ease-in duration-200"
+              "font-serif font-medium xs:text-xs md:text-lg bg-white xs:px-2 xs:py-1 md:px-5 md:py-2 hover:bg-lightGreen hover:bg-transparent hover:text-white rounded-xl ease-in duration-200"
             }
           >
             PLAN A VISIT
           </NavLink>
         </div>
-        <img src={docAndPatient} className="rounded-xl w-[40rem]" />
+        <img
+          src={docAndPatient}
+          className="rounded-xl xs:w-[10rem] xs:h-[8rem] md:w-80 md:h-44 lg:w-[40rem] lg:h-auto xs:object-center-top  object-cover"
+        />
       </section>
-      <section className="w-full font-serif place-items-center py-20 px-14 text-darkGreen grid grid-cols-2 grid-rows-2 gap-10">
+      <section className="w-full font-serif place-items-center py-10 xs:px-3 md:px-6 lg:px-14 text-darkGreen grid xs:grid-rows-4 xs:gap-4 md:grid-cols-2 md:grid-rows-2 md:gap-10">
         <img src={docAndPatient} className="rounded-xl h-full object-cover" />
-        <div className="text-left text-md flex flex-col gap-3">
-          <h1 className="font-ubuntu font-bold text-6xl text-lightGreen">
+        <div className="text-left xs:text-xs md:text-md lg:text-lg flex flex-col gap-3">
+          <h1 className="font-ubuntu font-bold xs:text-xl md:text-4xl lg:text-6xl text-lightGreen">
             <span className="text-darkGreen"> Your Health </span>
-            is <br />
-            Our Priority.
+            is Our Priority.
           </h1>
           <p>
-            With dedicated physicians who are dedicated to your health care
-            needs, you can rest assured that we will provide you with a
-            comprehensive medical experience in a modern, clean and caring
-            environment.
+            With dedicated physicians who prioritize your health care needs, you
+            can rest assured that we will provide you with a comprehensive
+            medical experience in a modern, clean and caring environment.
           </p>
           <p>
             Patients also have access to an onsite imaging clinic, pharmacy,
@@ -51,32 +52,36 @@ export const Home = () => {
             able to accept any more patients for that day.
           </p>
         </div>
-        <div className="font-ubuntu font-bold text-2xl text-darkGreen">
-          <p className="flex flex-row place-items-center gap-3 ">
-            <BiSolidBadgeCheck className="size-14 fill-lightGreen" /> Serving
-            the Durham Region since 19...?
+        <div className="font-ubuntu font-bold xs:text-sm md:text-lg lg:text-3xl text-darkGreen xs:row-start-4 md:row-start-2">
+          <p className="flex flex-row place-items-center xs:gap-3 lg:mb-4">
+            <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" />
+            Serving Durham since 2000
           </p>
-          <p className="flex flex-row place-items-center gap-3">
-            <BiSolidBadgeCheck className="size-14 fill-lightGreen" /> Open 7
+          <p className="flex flex-row place-items-center xs:gap-3 lg:mb-4">
+            <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" /> Open 7
             days a week
           </p>
-          <p className="flex flex-row place-items-center gap-3">
-            <BiSolidBadgeCheck className="size-14 fill-lightGreen" /> Onsite
+          <p className="flex flex-row place-items-center xs:gap-3 lg:mb-4">
+            <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" /> Onsite
             imaging and pharmacy
           </p>
-          <p className="flex flex-row place-items-center gap-3">
-            <BiSolidBadgeCheck className="size-14 fill-lightGreen" /> Onsite
+          <p className="flex flex-row place-items-center xs:gap-3 lg:mb-4">
+            <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" /> Onsite
             imaging and pharmacy
           </p>
-          <p className="flex flex-row place-items-center gap-3">
-            <BiSolidBadgeCheck className="size-14 fill-lightGreen" /> Add one
+          <p className="flex flex-row place-items-center xs:gap-3 lg:mb-4">
+            <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" /> Add one
+            more item?
+          </p>
+          <p className="flex flex-row place-items-center xs:gap-3">
+            <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" /> Add one
             more item?
           </p>
         </div>
         <img src={docAndPatient} className="rounded-xl h-full object-cover" />
       </section>
       <div
-        className="h-[52vh] bg-fixed bg-center bg-cover bg-darkGreen bg-opacity-50 bg-blend-multiply"
+        className="xs:h-[25vh]  md:h-[52vh] bg-fixed bg-top xs:bg-fit lg:bg-center bg-cover bg-darkGreen bg-opacity-50 bg-blend-multiply"
         style={{ backgroundImage: `url(${outsideClinic})` }}
       ></div>
     </main>

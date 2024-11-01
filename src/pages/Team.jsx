@@ -5,30 +5,30 @@ import { useState } from "react";
 export const Team = () => {
   const [doctors, setDoctors] = useState(doctorsProfile);
   return (
-    <main className="mt-20 flex flex-col place-items-center py-20 px-72 text-darkGreen font-serif">
-      <h1 className="font-ubuntu font-bold text-6xl mb-20">Our Team.</h1>
+    <main className="xs:mt-10 md:mt-20 flex flex-col place-items-center xs:py-10 xs:px-3 md:px-6 lg:px-72 lg:py-20  text-darkGreen font-serif">
+      <h1 className="font-ubuntu font-bold xs:text-4xl md:text-6xl xs:mb-10 md:mb-20">
+        Our Team.
+      </h1>
       <div className="flex flex-col gap-10">
         {doctors.map((doctor, index) => (
           <div
-            className="flex flex-row justify-evenly items-center"
+            className="flex flex-row xs:gap-4 md:gap-7 lg:gap-10 items-center"
             key={index}
           >
             <img
               src={doctor.image || defaultProfile}
-              className="rounded-full size-44 object-cover mr-10"
+              className="rounded-full xs:size-20 md:size-44 object-cover"
             ></img>
-            <div className="flex flex-col justify-evenly gap-1 w-full">
-              <h2 className="font-ubuntu font-bold text-2xl text-lightGreen">
+            <div className="flex flex-col justify-evenly xs:gap-0 md:gap-1 w-full xs:text-xs md:text-sm lg:text-lg">
+              <h2 className="font-ubuntu font-bold xs:text-lg md:text-2xl text-lightGreen">
                 {doctor.name}
               </h2>
-              <p className="text-lg">
+              <p className="">
                 <span className="font-ubuntu font-bold">CPSO: </span>
                 {doctor.cpso}
               </p>
               <p>
-                <span className="font-ubuntu font-bold text-lg">
-                  Available Days:{" "}
-                </span>
+                <span className="font-ubuntu font-bold">Available Days: </span>
                 {doctor.daysWorked || "Please contact the clinic to find out"}
               </p>
               <hr />

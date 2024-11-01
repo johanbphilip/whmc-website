@@ -54,18 +54,18 @@ export const services = [
     name: "Vaccination",
     description:
       "Vaccine availability is dependent on stocks and may not be available during your visit. To ensure that you will get a vaccine on your visit, please contact the clinic to enquire about the avaiablitiy of all your vaccines.",
-    cost: "Covered by OHIP",
+    cost: "OHIP",
     image: vaccinePhoto,
   },
   {
     name: "TB Test",
     description:
       "TB tests vary in cost based on the steps and the purpose. The 2-step test requires 4 visits whereas the 1-step requires 2 visits. If the TB test is for work, it is a $30 charge per visit, for school or volunteering, it is covered by OHIP.",
-    cost: "Dependent on reason",
+    cost: "OHIP / $30",
     image: tbPhoto,
   },
   {
-    name: "Driver’s License Medical",
+    name: "Driver’s Medical",
     description:
       "Drivers License forms are filled out by select doctors. Please contact the clinic to know more about which doctors fill out the form and when they will be available.",
     cost: "$120",
@@ -81,7 +81,7 @@ export const services = [
     name: "WSIB Forms",
     description:
       "We complete WSIB related paperwork such as Health Professionals Report (form 8), Functional Abilities Forms (FAFs), return to work recommendations, etc.",
-    cost: "Covered by OHIP",
+    cost: "OHIP",
   },
   {
     name: "Sick Notes",
@@ -96,28 +96,28 @@ export const services = [
     cost: "$20",
   },
   {
-    name: "Specialist Referrals",
+    name: "Specialist Referral",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias deserunt vel. Ab iure laboriosam dignissimos nobis aspernatur, porro sed ipsum? Tenetur at, corrupti dolorem eum minus quibusdam quae consequatur?",
-    cost: "Covered by OHIP",
+    cost: "OHIP",
   },
   {
     name: "Prescription Refills",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias deserunt vel. Ab iure laboriosam dignissimos nobis aspernatur, porro sed ipsum? Tenetur at, corrupti dolorem eum minus quibusdam quae consequatur?",
-    cost: "Covered by OHIP",
+    cost: "OHIP",
   },
   {
     name: "General Visits",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias deserunt vel. Ab iure laboriosam dignissimos nobis aspernatur, porro sed ipsum? Tenetur at, corrupti dolorem eum minus quibusdam quae consequatur?",
-    cost: "Covered by OHIP",
+    cost: "OHIP",
   },
 ];
 
 export const plan = [
   {
-    summary: "1. What is your reason for visit?",
+    summary: "What is your reason for visit?",
     detail: () => (
       <>
         Check out our{" "}
@@ -131,12 +131,12 @@ export const plan = [
     ),
   },
   {
-    summary: "2. Can a doctor on call assist you?",
+    summary: "Can a doctor on call assist you?",
     detail:
       "While most of our physicians see all patients, there are exceptiosn for Driver's License forms, and physicals. If you are coming in for either of those, please contact contact the clinic at to see if the doctor on call can see you.",
   },
   {
-    summary: "3. What time will you be arriving?",
+    summary: "What time will you be arriving?",
     detail: () => (
       <>
         Please ensure that you arrive at the clinic well before closing time in
@@ -151,7 +151,7 @@ export const plan = [
     ),
   },
   {
-    summary: "4. What do I bring to the clinic?",
+    summary: "What do I bring to the clinic?",
     detail: () => (
       <>
         1. A valid health card (if you are a OHIP patient) or $90 if you are a
@@ -163,7 +163,7 @@ export const plan = [
     ),
   },
   {
-    summary: "5. What should I expect at the clinic?",
+    summary: "What should I expect at the clinic?",
     detail: () => (
       <>
         1. You will visit the front desk and they will instruct you to write
