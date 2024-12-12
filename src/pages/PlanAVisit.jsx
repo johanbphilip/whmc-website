@@ -12,7 +12,7 @@ export const PlanAVisit = () => {
         we meet all your needs, please refer to the questions below to ensure
         that you are well prepared for your visit.
       </p>
-      <div className="md:w-3/4 lg:w-1/2 mt-10">
+      <div className="xs:w-4/5 md:w-3/4 lg:w-1/2 mt-10">
         {plan.map((plan, index) => (
           <Accordion summary={plan.summary} detail={plan.detail} key={index} />
         ))}

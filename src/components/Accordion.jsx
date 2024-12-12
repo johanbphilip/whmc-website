@@ -12,7 +12,7 @@ export const Accordion = ({ summary, detail }) => {
         active ? "xs:my-1 lg:my-2 first:mt-0" : ""
       } `}
     >
-      <h2 className="flex justify-between place-items-center font-ubuntu xs:text-sm lg:text-xl">
+      <h2 className="flex justify-between place-items-center font-ubuntu xs:text-sm lg:text-xl xs:w-full ">
         {summary}
         <span onClick={accordionTitleClicked}>
           <RiArrowDropDownLine

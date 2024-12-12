@@ -27,7 +27,7 @@ export const Footer = () => {
           </p>
           <p className="flex place-items-center">
             <IoMail className="mr-3" />
-            management.westeyheights@gmail.com
+            management.westneyheights@gmail.com
           </p>
           <hr className="opacity-75 border-dashed border-lightGreen" />
           <p className="xs:hidden lg:block">
