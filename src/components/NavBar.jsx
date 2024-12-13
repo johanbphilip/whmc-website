@@ -1,9 +1,11 @@
-import React from "react";
+import { React } from "react";
 import { NavLink } from "react-router-dom";
+import { DropdownLink } from "./DropdownLink";
+import { AboutUsContent } from "./DropdownContents";
 
 export const NavBar = () => {
   return (
-    <nav className="xs:hidden lg:flex justify-between w-full font-serif items-center ">
+    <nav className="xs:hidden lg:flex justify-between w-full font-serif">
       <h1 className="font-ubuntu font-bold text-xl hover:text-lightGreen">
         <NavLink to={"/"}>WHMC</NavLink>
       </h1>
@@ -16,6 +18,9 @@ export const NavBar = () => {
         >
           HOME
         </NavLink>
+        <DropdownLink href={"/our-team"} DropdownContent={AboutUsContent}>
+          ABOUT US
+        </DropdownLink>
         <NavLink
           to={"/services"}
           className={
@@ -24,14 +29,7 @@ export const NavBar = () => {
         >
           SERVICES
         </NavLink>
-        <NavLink
-          to={"/our-team"}
-          className={
-            "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
-          }
-        >
-          OUR TEAM
-        </NavLink>
+
         <NavLink
           to={"/hours"}
           className={

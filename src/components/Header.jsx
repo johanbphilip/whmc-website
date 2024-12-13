@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row bg-white text-darkGreen font-normal place-items-center justify-between xs:h-10 md:h-20 xs:px-5 md:px-6 lg:px-14 fixed top-0 w-full z-10">
+      <header className="flex flex-row bg-white text-darkGreen font-normal place-items-center justify-center xs:h-10 md:h-20 xs:px-5 md:px-6 lg:px-14 fixed top-0 w-full  z-10">
         <NavBar />
         <h1 className="font-ubuntu font-bold text-xl hover:text-lightGreen xs:block lg:hidden">
           <NavLink to={"/"}>WHMC</NavLink>
@@ -43,11 +43,12 @@ export const Header = () => {
             <NavLink
               to={"/services"}
               className={
-                "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
+                "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200 hover:"
               }
             >
               SERVICES
             </NavLink>
+
             <NavLink
               to={"/our-team"}
               className={

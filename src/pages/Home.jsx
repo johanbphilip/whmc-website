@@ -35,7 +35,7 @@ export const Home = () => {
           className="rounded-xl w-full h-auto object-cover"
         />
         <div className="text-left xs:text-xs md:text-md lg:text-lg flex flex-col gap-3">
-          <h1 className="font-ubuntu font-bold xs:text-xl md:text-4xl lg:text-6xl text-lightGreen">
+          <h1 className="font-ubuntu font-bold xs:text-xl md:text-4xl lg:text-5xl text-lightGreen">
             <span className="text-darkGreen"> Your Health </span>
             is Our Priority.
           </h1>
@@ -55,7 +55,7 @@ export const Home = () => {
             able to accept any more patients for that day.
           </p>
         </div>
-        <div className="font-ubuntu font-bold xs:text-sm md:text-lg lg:text-3xl text-darkGreen xs:row-start-4 md:row-start-2">
+        <div className="font-ubuntu font-bold xs:text-sm md:text-lg lg:text-2xl text-darkGreen xs:row-start-4 md:row-start-2">
           <p className="flex flex-row place-items-center xs:gap-3 lg:mb-4">
             <BiSolidBadgeCheck className="xs:size-10 fill-lightGreen" />
             Serving Durham since 2000

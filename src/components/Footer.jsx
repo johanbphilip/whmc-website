@@ -22,6 +22,8 @@ export const Footer = () => {
           <p className="flex place-items-center gap-3 ">
             <FaPhone />
             905&#45;428&#45;8055
+          </p>
+          <p className="flex place-items-center gap-3 ">
             <FaPrint />
             905&#45;428&#45;1501
           </p>
@@ -30,7 +32,7 @@ export const Footer = () => {
             management.westneyheights@gmail.com
           </p>
           <hr className="opacity-75 border-dashed border-lightGreen" />
-          <p className="xs:hidden lg:block">
+          {/* <p className="xs:hidden lg:block">
             &copy; {year} Westney Heights Medical | All Rights Reserved
             <span className="lg:hidden">
               {" "}
@@ -42,7 +44,7 @@ export const Footer = () => {
                 Johan Philip
               </a>
             </span>
-          </p>
+          </p> */}
         </div>
         <div className="flex flex-col xs:w-3/4 md:w-80">
           <h2 className="font-ubuntu font-bold xs:text-center xs:text-lg lg:text-xl mb-2">
@@ -103,7 +105,7 @@ export const Footer = () => {
       <div className="xs:hidden lg:flex flex-row justify-between text-white align-middle">
         <hr className="stroke-white" />
         <p>
-          Designed by{" "}
+          &copy; {year} WHMC | All Rights Reserved | Designed by{" "}
           <a
             href="https://github.com/johanbphilip"
             className="text-lightGreen hover:text-yellow-800"
