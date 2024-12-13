@@ -12,11 +12,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Montserrat", "sans-serif"], // in future change to the font name itself
+        serif: ["Montserrat", "sans-serif"], //TODO: in future have names as primary or secondary
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       colors: {
-        darkGreen: "#243e36",
+        darkGreen: "#243e36", //TODO: in future have names as primaryDark, primaryLight, darkAccent, lightAccent, etc.
         lightGreen: "#7ca982",
         whiteGreen: "#f1f7ed",
       },

@@ -7,7 +7,7 @@ export const DropdownLink = ({ children, href, DropdownContent }) => {
   const showDropdown = DropdownContent && dropdownOpen;
   return (
     <div
-      className="py-1 relative"
+      className="relative py-1"
       onMouseEnter={() => setDropdownOpen(true)}
       onMouseLeave={() => setDropdownOpen(false)}
     >

@@ -13,20 +13,12 @@ export const AboutUsContent = () => {
         OUR TEAM
       </NavLink>
       <NavLink
-        to={"/mission"}
+        to={"/mission-testimonials"}
         className={
           "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
         }
       >
-        MISSION
-      </NavLink>
-      <NavLink
-        to={"/testimonials"}
-        className={
-          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
-        }
-      >
-        TESTIMONIALS
+        MISSION & TESTIMONIALS
       </NavLink>
       <NavLink
         to={"/policies"}
@@ -40,5 +32,24 @@ export const AboutUsContent = () => {
   );
 };
 export const ServicesContent = () => {
-  return <div></div>;
+  return (
+    <div className="w-64 bg-white py-1 shadow-lg flex flex-col mt-4 gap-2 rounded-xl">
+      <NavLink
+        to={"/our-team"}
+        className={
+          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+        }
+      >
+        OUR SERVICES
+      </NavLink>
+      <NavLink
+        to={"/mission"}
+        className={
+          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+        }
+      >
+        HEALTH RESOURCES
+      </NavLink>
+    </div>
+  );
 };
