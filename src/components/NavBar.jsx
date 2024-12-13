@@ -6,12 +6,12 @@ import { AboutUsContent, ServicesContent } from "./DropdownContents";
 export const NavBar = () => {
   return (
     <nav className="xs:hidden lg:flex justify-between w-full font-serif">
-      <h1 className=" font-ubuntu font-bold text-xl hover:text-lightGreen place-content-center">
+      <h1 className="font-ubuntu font-bold text-xl hover:text-lightGreen place-content-center">
         <NavLink to={"/"} className={"px-5 py-1"}>
           WHMC
         </NavLink>
       </h1>
-      <ul className="flex flex-row justify-evenly gap-3 ">
+      <ul className="flex flex-row justify-evenly items-center gap-3 ">
         <NavLink
           to={"/"}
           className={
@@ -23,7 +23,7 @@ export const NavBar = () => {
         <DropdownLink href={"/our-team"} DropdownContent={AboutUsContent}>
           ABOUT US
         </DropdownLink>
-        <DropdownLink href={"/our-serices"} DropdownContent={ServicesContent}>
+        <DropdownLink href={"/services"} DropdownContent={ServicesContent}>
           SERVICES
         </DropdownLink>
         <NavLink

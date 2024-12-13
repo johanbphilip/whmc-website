@@ -35,7 +35,7 @@ export const ServicesContent = () => {
   return (
     <div className="w-64 bg-white py-1 shadow-lg flex flex-col mt-4 gap-2 rounded-xl">
       <NavLink
-        to={"/our-team"}
+        to={"/our-services"}
         className={
           "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
         }
@@ -43,7 +43,7 @@ export const ServicesContent = () => {
         OUR SERVICES
       </NavLink>
       <NavLink
-        to={"/mission"}
+        to={"/clinic-policies"}
         className={
           "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
         }
