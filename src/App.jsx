@@ -4,7 +4,8 @@ import { Hours } from "./pages/Hours";
 import { Team } from "./pages/Team";
 import { Services } from "./pages/Services";
 import { RootLayout } from "./layout/RootLayout";
-import { NotFound } from "./pages/NotFound"; // Ensure you import this
+import { NotFound } from "./pages/NotFound";
+import { MissionTestimonial } from "./pages/MissionTestimonial";
 
 import {
   Route,
@@ -22,6 +23,7 @@ function App() {
         <Route path="our-team" element={<Team />} />
         <Route path="hours" element={<Hours />} />
         <Route path="plan-a-visit" element={<PlanAVisit />} />
+        <Route path="mission-testimonials" element={<MissionTestimonial />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     ),
