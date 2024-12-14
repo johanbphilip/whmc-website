@@ -2,38 +2,46 @@ import { NavLink } from "react-router-dom";
 
 export const doctors = [
   {
-    name: "Dr. Abdallah, Barwaaqo",
-    cpso: "113645",
-    daysWorked: "",
+    name: "Dr. Li, Donna",
+    cpso: "91626",
+    daysWorked: "Tuesday, Friday, alternate Wednesdays and Saturdays",
+    image: "",
   },
   {
     name: "Dr. Al-Ward, Harith",
     cpso: "85882",
-    daysWorked: "Monday, Thursday, Sunday and alternate Wednesdays",
-  },
-  {
-    name: "Dr. Izzeldin, Abuelgasim",
-    cpso: "77362",
-
-    daysWorked: "",
-  },
-  {
-    name: "Dr. Li, Donna",
-    cpso: "91626",
-    daysWorked: "Tuesday, Friday and alternate Wednesdays and Saturdays",
+    daysWorked: "Monday, Thursday, Sunday, alternate Wednesdays",
+    image: "",
   },
   {
     name: "Dr. Lum, Bill",
     cpso: "59734",
-    daysWorked: "Monday, Thursday and alternate Wednesdays and Saturdays",
+    daysWorked: "Monday, Thursday, alternate Wednesdays and Saturdays",
+    image: "",
+  },
+  {
+    name: "Dr. Abdallah, Barwaaqo",
+    cpso: "113645",
+    daysWorked: "",
+    image: "",
+  },
+  {
+    name: "Dr. Izzeldin, Abuelgasim",
+    cpso: "77362",
+    daysWorked: "",
+    image: "",
   },
   {
     name: "Dr. Lum, Jeffrey",
     cpso: "65913",
     daysWorked: "",
+    image: "",
   },
 ];
-
+export const management = [
+  { name: "Al Zaghi", position: "Clinic Owner" },
+  { name: "Sheema Abdul Razzak", position: "Clinic Manager" },
+];
 export const ohipServices = [
   "Vaccination",
   "WSIB Forms",
