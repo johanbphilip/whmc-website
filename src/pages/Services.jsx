@@ -36,13 +36,13 @@ export const Services = () => {
         </div>
       </section>
       {/*//TODO: find a better alternative to In-house Local or Affiliated*/}
-      <section className="lg:px-14 lg:py-20 flex flex-col w-full justify-between items-center bg-whiteGreen">
+      <section className="lg:px-10 lg:py-20 flex flex-col w-full justify-between items-center bg-whiteGreen">
         <h1 className="font-ubuntu font-bold xs:text-4xl md:text-6xl mb-20">
           In-House Providers
         </h1>
         <div className="flex flex-row w-full justify-evenly">
-          <div className="bg-darkGreen w-1/4 text-white rounded-lg px-10 py-5 flex flex-col gap-3 text-left">
-            <p>Westney Spine Care</p>
+          <div className="bg-darkGreen w-fit text-white rounded-lg px-10 py-5 flex flex-col gap-3 text-left">
+            <p>Westney Spine Care & Wellness Centre</p>
             <a
               href="https://www.westneyspinecare.com/"
               target="_blank"
