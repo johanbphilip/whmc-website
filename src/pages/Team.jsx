@@ -1,10 +1,13 @@
-import { doctors as doctorsProfile, management } from "../assets/data.jsx";
+import {
+  doctors as doctorsList,
+  management as managementList,
+} from "../assets/data.jsx";
 import { useState } from "react";
-import { Doctor } from "../components/Doctor.jsx";
-import { Profile } from "../components/Profile.jsx";
+import { Doctor, Profile } from "../components/Doctor.jsx";
 
 export const Team = () => {
-  const [doctors, setDoctors] = useState(doctorsProfile);
+  const [doctors, setDoctors] = useState(doctorsList);
+  const [management, setManagement] = useState(managementList);
   return (
     <main className="xs:mt-10 md:mt-20 flex flex-col place-items-center text-darkGreen font-serif px-5 mb-10">
       <section className="place-items-center px-36 xs:py-10 lg:py-20">

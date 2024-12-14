@@ -63,7 +63,7 @@ export const plan = [
     detail: () => (
       <>
         Check out our{" "}
-        <NavLink to="/services" className="hover:text-darkGreen underline">
+        <NavLink to="/services" className="hover:text-white underline">
           Services
         </NavLink>{" "}
         page to see if a physician will see you for your reason. If it is not
@@ -85,7 +85,7 @@ export const plan = [
         order to ensure that you will be seen. The clinic may stop taking
         patients prior to posted closing time if the capacity is reached. Please
         refer to our{" "}
-        <NavLink to={"/hours"} className="hover:text-darkGreen underline">
+        <NavLink to={"/hours"} className="hover:text-white underline">
           hours
         </NavLink>{" "}
         to see if we are still open.
