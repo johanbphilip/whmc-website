@@ -3,7 +3,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const Services = () => {
   return (
-    <main className="xs:mt-10 md:mt-20 xs:py-10 lg:py-0 xs:px-3 md:px-8 lg:px-0 text-darkGreen font-serif flex flex-col justify-evenly  gap-10 items-center w-full">
+    <main className="xs:mt-10 md:mt-20 xs:py-10 xs:px-3 md:px-5 py-10  text-darkGreen font-serif flex flex-col justify-evenly gap-10 items-center w-full ">
       <h1 className="font-ubuntu font-bold text-6xl mt-20">Our Services.</h1>
       <section className="lg:px-14 lg:py-20 flex flex-row w-full justify-evenly">
         <div className="bg-darkGreen text-white rounded-lg px-10 py-5 flex flex-col gap-3">
@@ -36,7 +36,7 @@ export const Services = () => {
         </div>
       </section>
       {/*//TODO: find a better alternative to In-house Local or Affiliated*/}
-      <section className="lg:px-10 lg:py-20 flex flex-col w-full justify-between items-center bg-whiteGreen">
+      <section className="lg:px-10 lg:py-20 flex flex-col w-full justify-between items-center bg-whiteGreen rounded-xl ">
         <h1 className="font-ubuntu font-bold xs:text-4xl md:text-6xl mb-20">
           In-House Providers
         </h1>
