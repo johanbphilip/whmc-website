@@ -1,5 +1,5 @@
-import { useState, React } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, React } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const DropdownLink = ({ children, href, DropdownContent }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -14,7 +14,7 @@ export const DropdownLink = ({ children, href, DropdownContent }) => {
       <NavLink
         to={href}
         className={
-          "relative px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
+          'relative rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
         }
       >
         {children}

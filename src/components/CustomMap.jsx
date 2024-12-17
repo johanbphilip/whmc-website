@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import {
   APIProvider,
   Map,
   AdvancedMarker,
   Pin,
-} from "@vis.gl/react-google-maps";
+} from '@vis.gl/react-google-maps';
 
 export const CustomMap = () => {
   const MAP_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
@@ -18,7 +18,7 @@ export const CustomMap = () => {
   return (
     <APIProvider
       apiKey={MAP_API_KEY}
-      onLoad={() => console.log("Maps API has loaded.")}
+      onLoad={() => console.log('Maps API has loaded.')}
     >
       <Map
         defaultZoom={mapParams.zoom}
@@ -29,9 +29,9 @@ export const CustomMap = () => {
       >
         <AdvancedMarker position={mapParams.center}>
           <Pin
-            background={"#7ca982"}
-            glyphColor={"#243e36"}
-            borderColor={"#f1f7ed"}
+            background={'#7ca982'}
+            glyphColor={'#243e36'}
+            borderColor={'#f1f7ed'}
           />
         </AdvancedMarker>
       </Map>

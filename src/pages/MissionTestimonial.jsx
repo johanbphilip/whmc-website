@@ -1,16 +1,16 @@
-import mission1 from "../assets/mission5.png";
-import mission2 from "../assets/mission2.jpg";
-import mission3 from "../assets/mission3.jpg";
-import { Review } from "../components/Review";
+import mission1 from '../assets/mission5.png';
+import mission2 from '../assets/mission2.jpg';
+import mission3 from '../assets/mission3.jpg';
+import { Review } from '../components/Review';
 
 export const MissionTestimonial = () => {
   return (
-    <main className="xs:mt-10 md:mt-20 flex flex-col px-5 font-serif justify-center items-center gap-10 relative mb-10">
-      <section className="flex flex-col justify-center items-center px-40 text-lg gap-10 text-center h-screen bg-whiteGreen rounded-xl">
-        <h1 className="font-ubuntu font-semibold text-7xl text-darkGreen mb-20">
+    <main className="relative mb-10 flex flex-col items-center justify-center gap-10 px-5 font-serif xs:mt-10 md:mt-20">
+      <section className="flex h-screen flex-col items-center justify-center gap-10 rounded-xl bg-whiteGreen text-center xs:px-5 xs:py-20 xs:text-xs md:px-40 md:text-lg">
+        <h1 className="font-ubuntu font-semibold text-darkGreen xs:mt-20 xs:text-4xl md:mb-20 md:text-7xl">
           Our Mission.
         </h1>
-        <div className="flex flex-col gap-10 mb-10 px-20">
+        <div className="flex flex-col gap-10 xs:mb-0 xs:px-0 md:mb-10 md:px-20">
           <p>
             Our mission is to provide compassionate, high-quality, and
             accessible healthcare to our community. We are committed to
@@ -26,27 +26,29 @@ export const MissionTestimonial = () => {
             innovation and excellence in healthcare meet.
           </p>
         </div>
-        <div className="flex gap-10 w-full items-center justify-evenly">
-          <img
-            src={mission1}
-            className="rounded-lg w-80 xs:object-center-top  object-cover shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"
-          />
-          <img
-            src={mission2}
-            className="rounded-lg  w-80 xs:object-center-top  object-cover shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"
-          />
-          <img
-            src={mission3}
-            className="rounded-lg w-80 xs:object-center-top  object-cover shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"
-          />
+        <div className="flex flex-row gap-10">
+          <div className="scrollbar-hidden flex w-full items-center justify-evenly gap-10 xs:overflow-x-auto md:overflow-hidden">
+            <img
+              src={mission1}
+              className="xs:object-center-top w-80 transform rounded-lg object-cover shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+            />
+            <img
+              src={mission2}
+              className="xs:object-center-top w-80 transform rounded-lg object-cover shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+            />
+            <img
+              src={mission3}
+              className="xs:object-center-top w-80 transform rounded-lg object-cover shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+            />
+          </div>
         </div>
       </section>
-      <h1 className="font-ubuntu font-semibold text-7xl mb-10 mt-20">
+      <h1 className="font-ubuntu font-semibold xs:my-3 xs:text-4xl md:my-10 md:text-7xl">
         Patient Testimonials.
       </h1>
-      <section className="flex flex-col rounded-xl text-darkGreen h-3/4 w-full bg-darkGreen p-10 text-left">
-        <div className="flex flex-row gap-10 scroll-bar-hidden">
-          <div className="flex overflow-x-auto gap-10 p-5 scrollbar-hidden">
+      <section className="relative flex h-3/4 w-full flex-col rounded-xl bg-darkGreen text-left text-darkGreen xs:p-3 md:p-10">
+        <div className="flex gap-10">
+          <div className="scrollbar-hidden flex overflow-x-auto xs:gap-5 xs:px-2 xs:py-5 md:gap-10 md:p-5">
             <Review />
             <Review />
             <Review />
@@ -55,6 +57,9 @@ export const MissionTestimonial = () => {
             <Review />
           </div>
         </div>
+        <p className="md:text-normal absolute text-white xs:bottom-2 xs:right-5 xs:text-xs md:bottom-5 md:right-10">
+          Scroll for more
+        </p>
       </section>
     </main>
   );

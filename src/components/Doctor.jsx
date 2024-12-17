@@ -1,15 +1,15 @@
-import React from "react";
-import defaultProfile from "../assets/profile-pic-default.jpg";
+import React from 'react';
+import defaultProfile from '../assets/profile-pic-default.jpg';
 
 export const Doctor = ({ doctor }) => {
   return (
-    <div className="flex flex-col xs:gap-4 md:gap-7 lg:gap-5 items-center justify-top">
+    <div className="justify-top flex flex-col items-center xs:gap-4 md:gap-7 lg:gap-5">
       <img
         src={doctor.image ? doctor.image : defaultProfile}
-        className="rounded-lg xs:size-20 md:w-full md:h-80 object-cover"
+        className="w-full rounded-lg object-cover md:h-80"
       ></img>
-      <div className="flex flex-col justify-evenly xs:gap-0 w-full md:gap-1 xs:text-xs md:text-sm lg:text-md text-left">
-        <h2 className="font-ubuntu font-semibold xs:text-lg md:text-xl text-lightGreen">
+      <div className="lg:text-md flex w-full flex-col justify-evenly text-left xs:gap-0 xs:text-xs md:gap-1 md:text-sm">
+        <h2 className="font-ubuntu font-semibold text-lightGreen xs:text-lg md:text-xl">
           {doctor.name}
         </h2>
         <p className="">
@@ -17,7 +17,7 @@ export const Doctor = ({ doctor }) => {
           {doctor.cpso}
         </p>
         <p>
-          {doctor.daysWorked || "Please contact the clinic for availability"}
+          {doctor.daysWorked || 'Please contact the clinic for availability'}
         </p>
       </div>
     </div>
@@ -26,13 +26,13 @@ export const Doctor = ({ doctor }) => {
 
 export const Profile = ({ profile }) => {
   return (
-    <div className="flex flex-col xs:gap-4 md:gap-7 lg:gap-5 items-center justify-top">
+    <div className="justify-top flex flex-col items-center xs:gap-4 md:gap-7 lg:gap-5">
       <img
         src={profile.image ? profile.image : defaultProfile}
-        className="rounded-lg xs:size-20 md:w-full md:h-80 object-cover"
+        className="w-full rounded-lg object-cover md:h-80"
       ></img>
-      <div className="flex flex-col justify-evenly xs:gap-0 w-full md:gap-1 xs:text-xs md:text-sm lg:text-md text-left">
-        <h2 className="font-ubuntu font-semibold xs:text-lg md:text-xl text-lightGreen">
+      <div className="lg:text-md flex w-full flex-col justify-evenly text-left xs:gap-0 xs:text-xs md:gap-1 md:text-sm">
+        <h2 className="font-ubuntu font-semibold text-lightGreen xs:text-lg md:text-xl">
           {profile.name}
         </h2>
         <p className="">{profile.position}</p>

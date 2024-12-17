@@ -1,29 +1,29 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const AboutUsContent = () => {
   return (
-    <div className="w-64 bg-white py-1 shadow-lg flex flex-col mt-4 gap-2 rounded-xl">
+    <div className="mt-4 flex w-64 flex-col gap-2 rounded-xl bg-white py-1 shadow-lg">
       <NavLink
-        to={"/our-team"}
+        to={'/our-team'}
         className={
-          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
         }
       >
         OUR TEAM
       </NavLink>
       <NavLink
-        to={"/mission-testimonials"}
+        to={'/mission-testimonials'}
         className={
-          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
         }
       >
         MISSION & TESTIMONIALS
       </NavLink>
       <NavLink
-        to={"/policies"}
+        to={'/policies'}
         className={
-          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
         }
       >
         CLINIC POLICIES
@@ -33,19 +33,19 @@ export const AboutUsContent = () => {
 };
 export const ServicesContent = () => {
   return (
-    <div className="w-64 bg-white py-1 shadow-lg flex flex-col mt-4 gap-2 rounded-xl">
+    <div className="mt-4 flex w-64 flex-col gap-2 rounded-xl bg-white py-1 shadow-lg">
       <NavLink
-        to={"/our-services"}
+        to={'/our-services'}
         className={
-          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
         }
       >
         OUR SERVICES
       </NavLink>
       <NavLink
-        to={"/clinic-policies"}
+        to={'/clinic-policies'}
         className={
-          "px-5 py-1 hover:text-lightGreen rounded-xl ease-in duration-100"
+          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
         }
       >
         HEALTH RESOURCES
