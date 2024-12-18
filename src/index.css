@@ -24,3 +24,11 @@
     -ms-overflow-style: none; /* IE and Edge */
   }
 }
+@layer components {
+  .hover-images {
+    @apply shadow-md lg:transform lg:transition-transform lg:duration-200 lg:hover:scale-105 lg:hover:shadow-lg;
+  }
+  .main-container {
+    @apply flex flex-col justify-center gap-5 font-serif text-darkGreen xs:mt-10 xs:p-3 md:mt-20 md:p-5 lg:p-10;
+  }
+}

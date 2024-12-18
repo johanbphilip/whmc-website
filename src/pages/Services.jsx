@@ -3,11 +3,11 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 
 export const Services = () => {
   return (
-    <main className="mb-5 flex w-full flex-col items-center justify-evenly font-serif text-darkGreen xs:mt-0 xs:gap-5 xs:px-3 md:mt-20 md:gap-10 md:px-8 md:py-10 lg:px-5 lg:py-0">
-      <h1 className="mt-20 font-ubuntu font-bold xs:text-[45px] md:text-6xl">
+    <main className="main-container">
+      <h1 className="text-center font-ubuntu font-bold xs:my-10 xs:text-4xl md:my-20 md:text-6xl">
         Our Services.
       </h1>
-      <section className="flex w-full xs:flex-col xs:gap-5 md:flex-row md:justify-evenly md:gap-10 lg:px-14 lg:py-20">
+      <section className="flex w-full xs:flex-col xs:gap-5 md:mb-10 md:flex-row md:justify-evenly md:gap-10 lg:mb-0 lg:px-14 lg:py-20">
         <div className="flex flex-col gap-3 rounded-lg bg-darkGreen py-5 text-white xs:px-5 md:px-10">
           <h2 className="font-ubuntu text-2xl font-semibold">OHIP Services</h2>
           <ul>

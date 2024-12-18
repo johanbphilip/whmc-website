@@ -4,13 +4,13 @@ import { CustomMap } from '../components/CustomMap';
 
 export const Hours = () => {
   return (
-    <main className="flex flex-col items-center font-serif text-darkGreen xs:mt-14 xs:px-4 xs:py-10 xs:pb-5 xs:text-xs md:mt-20 md:px-6 md:pb-10 lg:px-20 lg:py-20">
-      <h1 className="font-ubuntu font-bold xs:mb-14 xs:text-5xl md:mb-20 lg:text-6xl">
+    <main className="main-container">
+      <h1 className="text-center font-ubuntu font-bold xs:my-10 xs:text-5xl md:my-20 lg:text-6xl">
         Our Hours.
       </h1>
-      <section className="grid xs:grid-cols-1 xs:grid-rows-2 xs:text-xs md:grid-cols-2 md:grid-rows-1 md:text-lg">
-        <div className="flex flex-col place-items-center bg-lightGreen text-white xs:row-start-2 xs:gap-1 xs:p-3 xs:px-5 md:row-start-1 md:p-6 lg:gap-3 lg:p-20">
-          <h2 className="font-ubuntu font-bold xs:text-2xl md:text-lg lg:text-4xl">
+      <section className="grid xs:grid-cols-1 xs:grid-rows-2 xs:text-xs md:text-lg lg:grid-cols-2 lg:grid-rows-1">
+        <div className="flex flex-col place-items-center gap-3 bg-lightGreen text-white xs:row-start-2 xs:p-3 xs:px-5 md:row-start-2 md:p-6 lg:row-start-1 lg:p-20">
+          <h2 className="font-ubuntu font-bold xs:text-2xl md:text-4xl">
             Hours
           </h2>
           <div className="flex flex-row xs:w-3/4 lg:w-4/5">
@@ -31,10 +31,10 @@ export const Hours = () => {
               <p>8am - 2pm</p>
             </div>
           </div>
-          <h2 className="mt-4 font-ubuntu font-bold xs:text-2xl md:text-lg lg:text-4xl">
+          <h2 className="font-ubuntu font-bold xs:text-2xl md:text-4xl">
             Contact Us
           </h2>
-          <div className="flex flex-col items-center gap-2 text-center">
+          <div className="flex flex-col items-center justify-evenly gap-2 text-center">
             <p className="flex place-items-center gap-2">
               <FaLocationDot />
               15 Westney Road N &#35;2, Ajax, ON, L1T 1P4{' '}

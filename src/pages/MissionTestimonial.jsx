@@ -5,9 +5,9 @@ import { Review } from '../components/Review';
 
 export const MissionTestimonial = () => {
   return (
-    <main className="relative mb-10 flex flex-col items-center justify-center gap-10 px-5 font-serif xs:mt-10 md:mt-20">
-      <section className="flex h-screen flex-col items-center justify-center gap-10 rounded-xl bg-whiteGreen text-center xs:px-5 xs:py-20 xs:text-xs md:px-40 md:text-lg">
-        <h1 className="font-ubuntu font-semibold text-darkGreen xs:mt-20 xs:text-4xl md:mb-20 md:text-7xl">
+    <main className="main-container">
+      <section className="flex h-screen flex-col items-center justify-center gap-10 rounded-xl bg-whiteGreen text-center xs:px-5 xs:py-20 xs:text-xs md:text-lg lg:px-40">
+        <h1 className="font-ubuntu font-semibold text-darkGreen xs:mt-10 xs:text-4xl md:my-20 md:text-6xl">
           Our Mission.
         </h1>
         <div className="flex flex-col gap-10 xs:mb-0 xs:px-0 md:mb-10 md:px-20">
@@ -43,7 +43,7 @@ export const MissionTestimonial = () => {
           </div>
         </div>
       </section>
-      <h1 className="font-ubuntu font-semibold xs:my-3 xs:text-4xl md:my-10 md:text-7xl">
+      <h1 className="text-center font-ubuntu font-semibold xs:my-3 xs:text-4xl md:my-10 md:text-6xl">
         Patient Testimonials.
       </h1>
       <section className="relative flex h-3/4 w-full flex-col rounded-xl bg-darkGreen text-left text-darkGreen xs:p-3 md:p-10">
