@@ -1,79 +1,71 @@
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
-import { IoMail } from "react-icons/io5";
-import { CustomMap } from "../components/CustomMap";
+import { FaLocationDot, FaPhone, FaPrint } from 'react-icons/fa6';
+import { IoMail } from 'react-icons/io5';
+import { CustomMap } from '../components/CustomMap';
 
 export const Hours = () => {
   return (
-    <main className="xs:mt-10 md:mt-20 flex flex-col place-items-center xs:py-10 lg:py-20 xs:px-3 md:px-6 lg:px-20 text-darkGreen font-serif">
-      <h1 className="font-ubuntu font-bold xs:text-4xl lg:text-6xl mb-20">
+    <main className="main-container">
+      <h1 className="text-center font-ubuntu font-bold xs:my-10 xs:text-5xl md:my-20 lg:text-6xl">
         Our Hours.
       </h1>
-      <section className="grid xs:grid-rows-2 md:grid-rows-1 md:grid-cols-2 xs:text-[10px] md:text-xs lg:text-lg">
-        <div className="flex flex-col xs:gap-1 lg:gap-3 bg-lightGreen text-white xs:p-3 md:p-6 lg:p-20 xs:row-start-2 md:row-start-1 place-items-center">
-          <h2 className="font-ubuntu xs:text-base md:text-lg lg:text-4xl font-bold">
+      <section className="grid xs:grid-cols-1 xs:grid-rows-2 xs:text-xs md:text-lg lg:grid-cols-2 lg:grid-rows-1">
+        <div className="flex flex-col place-items-center gap-3 bg-lightGreen text-white xs:row-start-2 xs:p-3 xs:px-5 md:row-start-2 md:p-6 lg:row-start-1 lg:p-20">
+          <h2 className="font-ubuntu font-bold xs:text-2xl md:text-4xl">
             Hours
           </h2>
           <div className="flex flex-row xs:w-3/4 lg:w-4/5">
-            <div className="flex flex-col xs:w-1/2">
-              <p className="my-1">Monday</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">Tuesday</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">Wednesday</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">Thursday</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">Friday</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">Weekends</p>
-              <hr className="border-opacity-75 border-white w-full" />
+            <div className="flex flex-col gap-0.5 xs:w-1/2">
+              <p>Monday</p>
+              <p>Tuesday</p>
+              <p>Wednesday</p>
+              <p>Thursday</p>
+              <p>Friday</p>
+              <p>Weekends</p>
             </div>
-            <div className="text-right flex flex-col xs:w-1/2">
-              <p className="my-1">8am - 4pm</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">8am - 2pm</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">8am - 4pm</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">8am - 4pm</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">8am - 2pm</p>
-              <hr className="border-opacity-75 border-white w-full" />
-              <p className="my-1">8am - 2pm</p>
-              <hr className="border-opacity-75 border-white w-full" />
+            <div className="flex flex-col gap-0.5 text-right xs:w-1/2">
+              <p>8am - 4pm</p>
+              <p>8am - 2pm</p>
+              <p>8am - 4pm</p>
+              <p>8am - 4pm</p>
+              <p>8am - 2pm</p>
+              <p>8am - 2pm</p>
             </div>
           </div>
-          <h2 className="font-ubuntu xs:text-base md:text-lg lg:text-4xl font-bold mt-4">
+          <h2 className="font-ubuntu font-bold xs:text-2xl md:text-4xl">
             Contact Us
           </h2>
-          <p className="flex place-items-center">
-            <FaLocationDot className="mr-2" />
-            15 Westney Road N &#35;2, Ajax, ON, L1T 1P4{" "}
-          </p>
-          <p className="flex place-items-center">
-            <FaPhone className="mr-3" />
-            905&#45;428&#45;8055
-          </p>
-          <p className="flex place-items-center">
-            <IoMail className="mr-3" />
-            management.westneyheights@gmail.com
-          </p>
-          <p className="font-bold md:text-lg lg:text-xl xs:my-2 md:my-4">
-            Visits are by walk-in only.
-          </p>
-          <p className="lg:text-base text-center">
-            Patients are seen Monday through Sunday starting at 8am. Closing
-            times may vary from posted hours depending on clinic capacity and
-            wait times.
-          </p>
-          <p className="lg:text-base text-center">
-            Patients can contact the clinic to find out the exact closing time
-            and wait times for each day.
-          </p>
+          <div className="flex flex-col items-center justify-evenly gap-2 text-center">
+            <p className="flex place-items-center gap-2">
+              <FaLocationDot />
+              15 Westney Road N &#35;2, Ajax, ON, L1T 1P4{' '}
+            </p>
+            <p className="flex place-items-center gap-3">
+              <FaPhone />
+              905&#45;428&#45;8055
+              <FaPrint />
+              905&#45;428&#45;1501
+            </p>
+            <p className="flex place-items-center gap-2">
+              <IoMail />
+              management.westneyheights@gmail.com
+            </p>
+            <p className="font-bold xs:my-2 md:my-4 md:text-lg lg:text-xl">
+              Visits are by walk-in only.
+            </p>
+            <p>
+              Patients are seen Monday through Sunday starting at 8am. Closing
+              times may vary from posted hours depending on clinic capacity and
+              wait times.
+            </p>
+            <p>
+              Patients can contact the clinic to find out the exact closing time
+              and wait times for each day.
+            </p>
+          </div>
 
           {/*<Calendar />*/}
         </div>
-        <div className="">
+        <div>
           <CustomMap />
         </div>
       </section>

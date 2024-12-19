@@ -1,47 +1,49 @@
-import { ohipServices, nonOhipServices } from "../assets/data.jsx";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { ohipServices, nonOhipServices } from '../assets/data.jsx';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 export const Services = () => {
   return (
-    <main className="xs:mt-10 md:mt-20 xs:py-10 xs:px-3 md:px-5 py-10  text-darkGreen font-serif flex flex-col justify-evenly gap-10 items-center w-full ">
-      <h1 className="font-ubuntu font-bold text-6xl mt-20">Our Services.</h1>
-      <section className="lg:px-14 lg:py-20 flex flex-row w-full justify-evenly">
-        <div className="bg-darkGreen text-white rounded-lg px-10 py-5 flex flex-col gap-3">
-          <h2 className="text-2xl font-semibold font-ubuntu">OHIP Services</h2>
+    <main className="main-container">
+      <h1 className="text-center font-ubuntu font-bold xs:my-10 xs:text-4xl md:my-20 md:text-6xl">
+        Our Services.
+      </h1>
+      <section className="flex w-full xs:flex-col xs:gap-5 md:mb-10 md:flex-row md:justify-evenly md:gap-10 lg:mb-0 lg:px-14 lg:py-20">
+        <div className="flex flex-col gap-3 rounded-lg bg-darkGreen py-5 text-white xs:px-5 md:px-10">
+          <h2 className="font-ubuntu text-2xl font-semibold">OHIP Services</h2>
           <ul>
             {ohipServices.map((service, index) => (
-              <li key={index} className="mt-2">
+              <li key={index} className="md:text-normal mt-2 xs:text-lg">
                 {service}
               </li>
             ))}
           </ul>
-          <p className="text-white opacity-50 text-xs">
+          <p className="text-xs text-white opacity-50">
             Services fully covered by Ontario Health Insurance Plan
           </p>
         </div>
-        <div className="bg-darkGreen  text-white rounded-lg px-10 py-5 flex flex-col gap-3">
-          <h2 className="text-2xl font-semibold font-ubuntu">
+        <div className="flex flex-col gap-3 rounded-lg bg-darkGreen py-5 text-white xs:px-5 md:px-10">
+          <h2 className="font-ubuntu text-2xl font-semibold">
             Non-OHIP Services
           </h2>
           <ul>
             {nonOhipServices.map((service, index) => (
-              <li key={index} className="mt-2">
+              <li key={index} className="md:text-normal mt-2 xs:text-lg">
                 {service}
               </li>
             ))}
           </ul>
-          <p className="text-white opacity-50 text-xs">
+          <p className="text-xs text-white opacity-50">
             Services NOT covered by Ontario Health Insurance Plan
           </p>
         </div>
       </section>
       {/*//TODO: find a better alternative to In-house Local or Affiliated*/}
-      <section className="lg:px-10 lg:py-20 flex flex-col w-full justify-between items-center bg-whiteGreen rounded-xl ">
-        <h1 className="font-ubuntu font-bold xs:text-4xl md:text-6xl mb-20">
+      <section className="flex w-full flex-col items-center gap-10 rounded-xl bg-whiteGreen xs:justify-evenly xs:px-5 xs:py-10 md:justify-between md:px-10 md:py-20">
+        <h1 className="font-ubuntu font-bold xs:text-4xl md:text-6xl">
           In-House Providers
         </h1>
-        <div className="flex flex-row w-full justify-evenly">
-          <div className="bg-darkGreen w-fit text-white rounded-lg px-10 py-5 flex flex-col gap-3 text-left">
+        <div className="flex w-full justify-evenly xs:flex-col xs:items-center xs:gap-5 md:flex-row md:gap-10">
+          <div className="flex w-full flex-col gap-3 rounded-lg bg-darkGreen px-5 py-5 text-left text-white">
             <p>Westney Spine Care & Wellness Centre</p>
             <a
               href="https://www.westneyspinecare.com/"
@@ -51,7 +53,7 @@ export const Services = () => {
               Learn More <MdKeyboardArrowRight className="size-6" />
             </a>
           </div>
-          <div className="bg-darkGreen w-fit text-white rounded-lg px-10 py-5 flex flex-col gap-3 text-left">
+          <div className="flex w-full flex-col gap-3 rounded-lg bg-darkGreen px-5 py-5 text-left text-white">
             <p>Westney Heights Diagnostic Centre</p>
             <a
               href="https://whdc.ca/"
@@ -61,7 +63,7 @@ export const Services = () => {
               Learn More <MdKeyboardArrowRight className="size-6" />
             </a>
           </div>
-          <div className="bg-darkGreen w-1/4 text-white rounded-lg px-10 py-5 flex flex-col gap-3 text-left">
+          <div className="flex w-full flex-col gap-3 rounded-lg bg-darkGreen px-5 py-5 text-left text-white">
             <p>Health Square Pharmacy</p>
             <a
               href="https://www.guardian-ida-remedysrx.ca/en/ontario/ajax/health-square-pharmacy-7029395"

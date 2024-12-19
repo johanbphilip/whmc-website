@@ -1,44 +1,44 @@
-import { React } from "react";
-import { NavLink } from "react-router-dom";
-import { DropdownLink } from "./DropdownLink";
-import { AboutUsContent, ServicesContent } from "./DropdownContents";
+import { React } from 'react';
+import { NavLink } from 'react-router-dom';
+import { DropdownLink } from './DropdownLink';
+import { AboutUsContent, ServicesContent } from './DropdownContents';
 
 export const NavBar = () => {
   return (
-    <nav className="xs:hidden lg:flex justify-between w-full font-serif">
-      <h1 className="font-ubuntu font-bold text-xl hover:text-lightGreen place-content-center">
-        <NavLink to={"/"} className={"px-5 py-1"}>
+    <nav className="w-full justify-between font-serif xs:hidden lg:flex">
+      <h1 className="place-content-center font-ubuntu text-xl font-bold hover:text-lightGreen">
+        <NavLink to={'/'} className={'px-5 py-1'}>
           WHMC
         </NavLink>
       </h1>
-      <ul className="flex flex-row justify-evenly items-center gap-3 ">
+      <ul className="flex flex-row items-center justify-evenly gap-3">
         <NavLink
-          to={"/"}
+          to={'/'}
           className={
-            "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
+            'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
           }
         >
           HOME
         </NavLink>
-        <DropdownLink href={"/our-team"} DropdownContent={AboutUsContent}>
+        <DropdownLink href={'/our-team'} DropdownContent={AboutUsContent}>
           ABOUT US
         </DropdownLink>
-        <DropdownLink href={"/services"} DropdownContent={ServicesContent}>
+        <DropdownLink href={'/services'} DropdownContent={ServicesContent}>
           SERVICES
         </DropdownLink>
         <NavLink
-          to={"/hours"}
+          to={'/hours'}
           className={
-            "px-5 py-1 border border-transparent hover:border-lightGreen hover:text-lightGreen rounded-xl ease-in duration-200"
+            'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
           }
         >
-          HOURS{" "}
+          HOURS{' '}
         </NavLink>
       </ul>
       <NavLink
-        to={"/plan-a-visit"}
+        to={'/plan-a-visit'}
         className={
-          " bg-darkGreen text-white px-5 py-1 border hover:border-lightGreen hover:text-lightGreen hover:bg-transparent rounded-xl ease-in duration-200"
+          'rounded-xl border bg-darkGreen px-5 py-1 text-white duration-200 ease-in hover:border-lightGreen hover:bg-transparent hover:text-lightGreen'
         }
       >
         PLAN A VISIT

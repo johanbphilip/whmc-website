@@ -1,87 +1,96 @@
-import { NavLink } from "react-router-dom";
-import docAndPatient from "../assets/doc-patient1.jpeg";
-import { BsArrowUpRightCircleFill } from "react-icons/bs";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
+import docAndPatient from '../assets/doc-patient1.jpeg';
+import { BsArrowUpRightCircleFill } from 'react-icons/bs';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 export const Home = () => {
   return (
-    <main className="xs:mt-10 md:mt-20 flex flex-col px-5 font-serif justify-center gap-10 relative mb-10">
-      <section className="bg-darkGreen rounded-xl h-screen flex justify-evenly items-center py-20">
-        <div className="flex flex-col gap-5">
-          <h1 className="font-ubuntu font-semibold text-7xl text-white">
+    <main className="main-container relative">
+      <section className="flex h-screen items-center justify-evenly rounded-xl bg-darkGreen xs:flex-col xs:gap-10 xs:py-20 xs:text-center md:gap-0 md:px-5 md:py-20 lg:flex-row lg:text-left">
+        <img
+          src={docAndPatient}
+          className="h-1/2 w-2/3 rounded-lg object-cover shadow-lg lg:hidden"
+        />
+        <div className="flex flex-col justify-center gap-5 xs:items-center xs:px-2 md:px-0 lg:items-start">
+          <h1 className="font-ubuntu font-semibold text-white xs:text-4xl md:text-6xl lg:text-7xl">
             Westney Heights <br />
             Medical Centre
           </h1>
-          <p className="text-lightGreen text-md">
+          <p className="md:text-md md:text-md text-lightGreen xs:text-sm md:text-base">
             See if Sheema has an ideas for a caption.
           </p>
-          <div className="flex gap-5 items-center">
+          <div className="flex items-center gap-5">
             <NavLink
-              to={"/plan-a-visit"}
+              to={'/plan-a-visit'}
               className={
-                "font-medium xs:text-xs md:text-lg bg-white xs:px-2 xs:py-1 md:px-5 md:py-2 hover:bg-lightGreen  hover:text-white rounded-xl ease-in duration-200 w-fit"
+                'xs:text-md w-fit rounded-xl bg-white font-medium duration-200 ease-in hover:bg-lightGreen hover:text-white xs:px-3 xs:py-1 md:px-5 md:py-2 md:text-lg'
               }
             >
               PLAN A VISIT
             </NavLink>
             <NavLink
-              to={"/hours"}
+              to={'/hours'}
               className={
-                "font-medium text-white text-xl flex items-center hover:text-lightGreen hover:underline underline-offset-4"
+                'xs:text-md mobile-link flex items-center font-medium text-white md:text-xl'
               }
             >
-              CLINIC HOURS <MdKeyboardArrowRight className="size-6" />
+              CLINIC HOURS{' '}
+              <MdKeyboardArrowRight className="size-6 xs:hidden lg:block" />
             </NavLink>
           </div>
         </div>
         <img
           src={docAndPatient}
-          className="rounded-lg h-4/5 w-80 xs:object-center-top  object-cover shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+          className="xs:object-center-top hover-images rounded-lg object-cover xs:hidden md:h-4/5 md:w-80 lg:block"
         />
       </section>
-      <div className="absolute -mt-5 inset-x-0 flex justify-evenly overflow-hidden py-3">
-        <div className="size-60 bg-lightGreen rounded-xl flex flex-col justify-evenly items-end py-3 px-5 shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-          <div className="text-left text-white flex flex-col gap-4">
-            <h2 className="font-ubuntu  font-semibold text-2xl">Our Team</h2>
-            <p className="text-sm">
+      <div className="absolute inset-x-0 -mt-0 justify-evenly overflow-hidden py-3 xs:hidden md:flex">
+        <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
+          <div className="flex flex-col gap-4 text-left text-white">
+            <h2 className="font-ubuntu font-semibold xs:text-xl lg:text-2xl">
+              Our Team
+            </h2>
+            <p className="xs:text-xs lg:text-sm">
               Meet the team of doctors at Westney Heights Medical who will be
               treating you.
             </p>
           </div>
-          <NavLink to={"/our-team"} className={"size-10"}>
-            <BsArrowUpRightCircleFill className="size-10 fill-white" />
+          <NavLink to={'/our-team'} className={'xs:size-7 md:size-10'}>
+            <BsArrowUpRightCircleFill className="fill-white xs:size-7 lg:size-10" />
           </NavLink>
         </div>
-        <div className="size-60 bg-lightGreen rounded-xl flex flex-col justify-evenly items-end py-3 px-5 shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-          <div className="text-left text-white flex flex-col gap-4">
-            <h2 className="font-ubuntu  font-semibold text-2xl">
+        <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
+          <div className="flex flex-col gap-4 text-left text-white">
+            <h2 className="xs:text-md font-ubuntu font-semibold xs:text-xl lg:text-2xl">
               Our Services
             </h2>
-            <p className="text-sm">
+            <p className="xs:text-xs lg:text-sm">
               Checkout the wide variety of services offered at Westney Heights
               Medical Center.
             </p>
           </div>
-          <NavLink to={"/services"} className={"size-10"}>
-            <BsArrowUpRightCircleFill className="size-10 fill-white" />
+          <NavLink to={'/services'} className={'xs:size-7 md:size-10'}>
+            <BsArrowUpRightCircleFill className="fill-white xs:size-7 lg:size-10" />
           </NavLink>
         </div>
-        <div className="size-60 bg-lightGreen rounded-xl flex flex-col justify-evenly items-end py-3 px-5 shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-          <div className="text-left text-white flex flex-col gap-4">
-            <h2 className="font-ubuntu  font-semibold text-2xl">Our Hours</h2>
-            <p className="text-sm">
+        <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
+          <div className="flex flex-col gap-4 text-left text-white">
+            <h2 className="font-ubuntu font-semibold xs:text-xl lg:text-2xl">
+              Our Hours
+            </h2>
+            <p className="xs:text-xs lg:text-sm">
               Click below to learn more aobut our hours, location and contact
               information.
             </p>
           </div>
-          <NavLink to={"/hours"} className={"size-10"}>
-            <BsArrowUpRightCircleFill className="size-10 fill-white" />
+          <NavLink to={'/hours'} className={'xs:size-7 md:size-10'}>
+            <BsArrowUpRightCircleFill className="fill-white xs:size-7 lg:size-10" />
           </NavLink>
         </div>
       </div>
-      <section className="bg-whiteGreen rounded-xl h-screen flex justify-evenly items-center">
-        <div className="text-left xs:text-xs md:text-md lg:text-lg flex flex-col gap-3 w-1/2">
-          <h1 className="font-ubuntu font-bold xs:text-xl md:text-4xl lg:text-5xl text-lightGreen">
+      <section className="flex items-center justify-evenly rounded-xl bg-whiteGreen xs:h-fit xs:flex-col xs:gap-4 xs:py-4 md:h-screen md:flex-row md:gap-0 md:py-0">
+        <div className="flex flex-col gap-3 text-left xs:w-fit xs:px-4 xs:text-sm md:w-1/2 md:px-0 md:text-base lg:text-lg">
+          <h1 className="font-ubuntu text-5xl font-bold text-lightGreen">
             <span className="text-darkGreen"> Your Health </span>
             is Our Priority.
           </h1>
@@ -103,7 +112,7 @@ export const Home = () => {
         </div>
         <img
           src={docAndPatient}
-          className="rounded-xl w-80 h-80 object-cover shadow-md transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+          className="hover-images flex rounded-xl object-cover shadow-md xs:relative xs:h-40 xs:w-60 md:h-80 md:w-80"
         />
       </section>
     </main>
