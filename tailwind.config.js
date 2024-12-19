@@ -3,7 +3,8 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
-      xs: '320px', // Custom extra-small breakpoint
+      xxs: '320px', // Custom extra-extra-small breakpoint
+      xs: '360px', // Custom extra small breakpoint
       sm: '640px', // Default Tailwind breakpoint
       md: '768px', // Default Tailwind breakpoint
       lg: '1024px', // Default Tailwind breakpoint

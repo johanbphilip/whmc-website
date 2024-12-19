@@ -5,7 +5,7 @@ import { AboutUsContent, ServicesContent } from './DropdownContents';
 
 export const NavBar = () => {
   return (
-    <nav className="w-full justify-between font-serif xs:hidden lg:flex">
+    <nav className="xxs:hidden w-full justify-between font-serif lg:flex">
       <h1 className="place-content-center font-ubuntu text-xl font-bold hover:text-lightGreen">
         <NavLink to={'/'} className={'px-5 py-1'}>
           WHMC

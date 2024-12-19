@@ -20,19 +20,19 @@ export const Review = () => {
 
   const endText = splitText.slice(defaultWords - 1).join('  ');
   return (
-    <div className="flex w-fit flex-col rounded-xl bg-whiteGreen font-serif text-darkGreen xs:p-3 md:p-5">
-      <h2 className="xs:text-normal flex items-center gap-2 font-ubuntu font-semibold md:text-xl">
+    <div className="xxs:p-3 flex w-fit flex-col rounded-xl bg-whiteGreen font-serif text-darkGreen md:p-5">
+      <h2 className="xxs:text-normal flex items-center gap-2 font-ubuntu font-semibold md:text-xl">
         Anonymous
         <span className="flex items-center">
-          <FaStar className="xs:size-3 md:size-4" />
-          <FaStar className="xs:size-3 md:size-4" />
-          <FaStar className="xs:size-3 md:size-4" />
-          <FaStar className="xs:size-3 md:size-4" />
-          <FaStar className="xs:size-3 md:size-4" />
+          <FaStar className="xxs:size-3 md:size-4" />
+          <FaStar className="xxs:size-3 md:size-4" />
+          <FaStar className="xxs:size-3 md:size-4" />
+          <FaStar className="xxs:size-3 md:size-4" />
+          <FaStar className="xxs:size-3 md:size-4" />
         </span>
       </h2>
-      <p className="mb-3 xs:text-[10px] md:text-xs">{review.createTime}</p>
-      <p className="xs:w-40 xs:text-xs md:w-80 md:text-lg">
+      <p className="xxs:text-[10px] mb-3 md:text-xs">{review.createTime}</p>
+      <p className="xxs:w-40 xxs:text-xs md:w-80 md:text-lg">
         {beginText}{' '}
         {canOverflow && (
           <>

@@ -29,7 +29,7 @@
     @apply shadow-md lg:transform lg:transition-transform lg:duration-200 lg:hover:scale-105 lg:hover:shadow-lg;
   }
   .main-container {
-    @apply flex flex-col justify-center gap-5 font-serif text-darkGreen xs:mt-10 xs:p-3 md:mt-20 md:p-5 lg:p-5;
+    @apply xxs:mt-10 xxs:p-3 flex flex-col justify-center gap-5 font-serif text-darkGreen md:mt-20 md:p-5 lg:p-5;
   }
   .nav-hover {
     @apply rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen;
@@ -38,6 +38,6 @@
     @apply rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen;
   }
   .mobile-link {
-    @apply underline-offset-4 hover:cursor-pointer hover:text-lightGreen xs:underline md:hover:underline lg:no-underline;
+    @apply xxs:underline underline-offset-4 hover:cursor-pointer hover:text-lightGreen md:hover:underline lg:no-underline;
   }
 }
