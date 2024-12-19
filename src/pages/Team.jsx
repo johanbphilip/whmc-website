@@ -10,21 +10,21 @@ export const Team = () => {
   const [management, setManagement] = useState(managementList);
   return (
     <main className="main-container">
-      <h1 className="text-center font-ubuntu font-bold xs:my-10 xs:text-4xl md:my-20 md:text-6xl">
+      <h1 className="xxs:my-10 xxs:text-4xl text-center font-ubuntu font-bold md:my-20 md:text-6xl">
         Physicians.
       </h1>
       <section className="lg:px-36">
-        <div className="grid w-fit xs:gap-5 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 lg:gap-10">
+        <div className="xxs:gap-5 grid w-fit md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 lg:gap-10">
           {doctors.map((doctor, index) => (
             <Doctor doctor={doctor} key={index} />
           ))}
         </div>
       </section>
-      <section className="flex w-full flex-col place-items-center items-center rounded-xl bg-whiteGreen xs:py-5 md:py-20">
-        <h1 className="font-ubuntu font-bold xs:my-10 xs:text-4xl md:mb-20 md:text-6xl">
+      <section className="xxs:py-5 flex w-full flex-col place-items-center items-center rounded-xl bg-whiteGreen md:py-20">
+        <h1 className="xxs:my-10 xxs:text-4xl font-ubuntu font-bold md:mb-20 md:text-6xl">
           Management.
         </h1>
-        <div className="grid w-fit xs:gap-5 xs:px-5 md:grid-cols-2 md:grid-rows-1 md:gap-10 md:px-0">
+        <div className="xxs:gap-5 xxs:px-5 grid w-fit md:grid-cols-2 md:grid-rows-1 md:gap-10 md:px-0">
           {management.map((profile, index) => (
             <Profile profile={profile} key={index} />
           ))}

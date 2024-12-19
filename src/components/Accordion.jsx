@@ -9,7 +9,7 @@ export const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="mx-auto rounded-xl xs:w-full md:w-3/4 lg:w-1/2">
+    <div className="xxs:w-full mx-auto rounded-xl xs:w-11/12 md:w-3/4 lg:w-1/2">
       {items.map((item, index) => (
         <AccordionItem
           key={index}
@@ -26,8 +26,8 @@ export const Accordion = ({ items }) => {
 const AccordionItem = ({ title, content, isActive, onClick }) => {
   return (
     <div className="my-2 rounded-xl bg-darkGreen text-white">
-      <div className="flex cursor-pointer xs:p-3 md:p-5" onClick={onClick}>
-        <h2 className="flex w-full place-items-center justify-between font-ubuntu font-semibold xs:text-base lg:text-xl">
+      <div className="xxs:p-3 flex cursor-pointer md:p-5" onClick={onClick}>
+        <h2 className="xxs:text-sm flex w-full place-items-center justify-between font-ubuntu font-semibold xs:text-base lg:text-xl">
           {title}
         </h2>
         <RiArrowDropDownLine
@@ -37,7 +37,7 @@ const AccordionItem = ({ title, content, isActive, onClick }) => {
         />
       </div>
       {isActive && (
-        <p className="font-serif font-normal xs:p-3 xs:text-xs md:p-5 md:text-sm">
+        <p className="xxs:p-3 xxs:text-xs font-serif font-normal xs:text-sm md:p-5 md:text-sm">
           {typeof content === 'function' ? content() : content}
         </p>
       )}

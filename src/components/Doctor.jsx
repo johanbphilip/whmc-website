@@ -3,13 +3,13 @@ import defaultProfile from '../assets/profile-pic-default.jpg';
 
 export const Doctor = ({ doctor }) => {
   return (
-    <div className="justify-top flex flex-col items-center xs:gap-2 md:gap-4 lg:gap-7">
+    <div className="justify-top xxs:gap-2 flex flex-col items-center md:gap-4 lg:gap-7">
       <img
         src={doctor.image ? doctor.image : defaultProfile}
         className="hover-images w-full rounded-lg object-cover md:h-80"
       ></img>
-      <div className="flex w-full flex-col justify-evenly text-left xs:gap-0 xs:text-xs md:gap-1 md:text-base lg:text-sm">
-        <h2 className="font-ubuntu font-medium text-lightGreen xs:text-lg md:text-2xl">
+      <div className="xxs:gap-0 xxs:text-xs flex w-full flex-col justify-evenly text-left xs:text-sm md:gap-1 md:text-base lg:text-sm">
+        <h2 className="xxs:text-lg font-ubuntu font-medium text-lightGreen md:text-2xl">
           {doctor.name}
         </h2>
         <p>
@@ -26,16 +26,16 @@ export const Doctor = ({ doctor }) => {
 
 export const Profile = ({ profile }) => {
   return (
-    <div className="justify-top flex flex-col items-center xs:gap-2 md:gap-4 lg:gap-7">
+    <div className="justify-top xxs:gap-2 flex flex-col items-center md:gap-4 lg:gap-7">
       <img
         src={profile.image ? profile.image : defaultProfile}
         className="hover-images w-full rounded-lg object-cover md:h-80"
       ></img>
-      <div className="flex w-full flex-col justify-evenly text-left xs:gap-0 xs:text-xs md:gap-1 md:text-base lg:text-sm">
-        <h2 className="font-ubuntu font-medium text-lightGreen xs:text-lg md:text-2xl">
+      <div className="xxs:gap-0 xxs:text-xs flex w-full flex-col justify-evenly text-left xs:text-sm md:gap-1 md:text-base lg:text-sm">
+        <h2 className="xxs:text-lg font-ubuntu font-medium text-lightGreen md:text-2xl">
           {profile.name}
         </h2>
-        <p className="text-sm">{profile.position}</p>
+        <p>{profile.position}</p>
       </div>
     </div>
   );
