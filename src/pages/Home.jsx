@@ -11,8 +11,8 @@ export const Home = () => {
           src={docAndPatient}
           className="h-1/2 w-2/3 rounded-lg object-cover shadow-lg lg:hidden"
         />
-        <div className="flex flex-col justify-center gap-5 xs:items-center lg:items-start">
-          <h1 className="font-ubuntu font-semibold text-white xs:text-5xl md:text-6xl lg:text-7xl">
+        <div className="flex flex-col justify-center gap-5 xs:items-center xs:px-2 md:px-0 lg:items-start">
+          <h1 className="font-ubuntu font-semibold text-white xs:text-4xl md:text-6xl lg:text-7xl">
             Westney Heights <br />
             Medical Centre
           </h1>
@@ -23,7 +23,7 @@ export const Home = () => {
             <NavLink
               to={'/plan-a-visit'}
               className={
-                'xs:text-md w-fit rounded-xl bg-white font-medium duration-200 ease-in xs:px-3 xs:py-1 md:px-5 md:py-2 md:text-lg md:hover:bg-lightGreen md:hover:text-white'
+                'xs:text-md w-fit rounded-xl bg-white font-medium duration-200 ease-in hover:bg-lightGreen hover:text-white xs:px-3 xs:py-1 md:px-5 md:py-2 md:text-lg'
               }
             >
               PLAN A VISIT
@@ -31,7 +31,7 @@ export const Home = () => {
             <NavLink
               to={'/hours'}
               className={
-                'xs:text-md flex items-center font-medium text-white underline-offset-4 hover:text-lightGreen xs:underline md:text-xl md:hover:underline lg:no-underline'
+                'xs:text-md mobile-link flex items-center font-medium text-white hover:text-lightGreen md:text-xl'
               }
             >
               CLINIC HOURS{' '}

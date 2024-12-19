@@ -31,44 +31,22 @@ export const Header = () => {
           className="flex w-3/4 flex-col gap-10 text-center"
           onClick={showMobileNavBar}
         >
-          <NavLink
-            to={'/'}
-            className={
-              'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
-            }
-          >
+          <NavLink to={'/'} className={'nav-hover'}>
             HOME
           </NavLink>
-          <NavLink
-            to={'/services'}
-            className={
-              'hover: rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
-            }
-          >
+          <NavLink to={'/services'} className={'nav-hover'}>
             SERVICES
           </NavLink>
 
-          <NavLink
-            to={'/our-team'}
-            className={
-              'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
-            }
-          >
+          <NavLink to={'/our-team'} className={'nav-hover'}>
             OUR TEAM
           </NavLink>
-          <NavLink
-            to={'/hours'}
-            className={
-              'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
-            }
-          >
+          <NavLink to={'/hours'} className={'nav-hover'}>
             HOURS{' '}
           </NavLink>
           <NavLink
             to={'/plan-a-visit'}
-            className={
-              'rounded-xl border bg-darkGreen px-5 py-1 text-white duration-200 ease-in hover:border-lightGreen hover:bg-transparent hover:text-lightGreen'
-            }
+            className={'nav-hover hover:bg-transparent hover:text-lightGreen'}
           >
             PLAN A VISIT
           </NavLink>

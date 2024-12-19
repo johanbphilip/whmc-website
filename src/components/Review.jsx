@@ -36,13 +36,12 @@ export const Review = () => {
         {beginText}{' '}
         {canOverflow && (
           <>
-            {!isExpanded && <span className="font-semibold">...</span>}
             <span className={`${!isExpanded && 'hidden'}`}>{endText}</span>
             <span
               onClick={() => setIsExpanded(!isExpanded)}
-              className="font-semibold"
+              className="mobile-link font-semibold"
             >
-              {isExpanded ? '...show less' : 'show more'}
+              {isExpanded ? ' show less' : '...show more'}
             </span>
           </>
         )}

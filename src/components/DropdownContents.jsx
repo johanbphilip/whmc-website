@@ -4,28 +4,13 @@ import { NavLink } from 'react-router-dom';
 export const AboutUsContent = () => {
   return (
     <div className="mt-4 flex w-64 flex-col gap-2 rounded-xl bg-white py-1 shadow-lg">
-      <NavLink
-        to={'/our-team'}
-        className={
-          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
-        }
-      >
+      <NavLink to={'/our-team'} className={'dropdown-hover'}>
         OUR TEAM
       </NavLink>
-      <NavLink
-        to={'/mission-testimonials'}
-        className={
-          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
-        }
-      >
+      <NavLink to={'/mission-testimonials'} className={'dropdown-hover'}>
         MISSION & TESTIMONIALS
       </NavLink>
-      <NavLink
-        to={'/policies'}
-        className={
-          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
-        }
-      >
+      <NavLink to={'/policies'} className={'dropdown-hover'}>
         CLINIC POLICIES
       </NavLink>
     </div>
@@ -34,20 +19,10 @@ export const AboutUsContent = () => {
 export const ServicesContent = () => {
   return (
     <div className="mt-4 flex w-64 flex-col gap-2 rounded-xl bg-white py-1 shadow-lg">
-      <NavLink
-        to={'/our-services'}
-        className={
-          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
-        }
-      >
+      <NavLink to={'/our-services'} className={'dropdown-hover'}>
         OUR SERVICES
       </NavLink>
-      <NavLink
-        to={'/clinic-policies'}
-        className={
-          'rounded-xl px-5 py-1 duration-100 ease-in hover:text-lightGreen'
-        }
-      >
+      <NavLink to={'/clinic-policies'} className={'dropdown-hover'}>
         HEALTH RESOURCES
       </NavLink>
     </div>
