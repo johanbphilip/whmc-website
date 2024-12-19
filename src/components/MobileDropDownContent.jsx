@@ -33,7 +33,7 @@ export const ServicesMobileContent = ({ closeAll }) => {
   return (
     <div className="left-0 flex flex-col gap-3 rounded-xl bg-white">
       <NavLink
-        to={'/mission-testimonials'}
+        to={'/services'}
         className={'dropdown-hover text-sm'}
         onClick={closeAll}
       >
