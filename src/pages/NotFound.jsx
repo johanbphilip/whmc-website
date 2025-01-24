@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 
 export const NotFound = () => {
   return (
-    <div className="xxs:mt-10 flex flex-col place-items-center px-10 py-20 font-serif md:mt-20">
+    <div className="flex flex-col place-items-center px-10 py-20 font-serif xxs:mt-10 md:mt-20">
       <h1 className="pb-20 font-ubuntu text-6xl font-bold text-red-600">
         404 - Page Not Found
       </h1>

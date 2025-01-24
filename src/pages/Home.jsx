@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import docAndPatient from '../assets/doc-patient1.jpeg';
 import { BsArrowUpRightCircleFill } from 'react-icons/bs';
 import { MdKeyboardArrowRight } from 'react-icons/md';

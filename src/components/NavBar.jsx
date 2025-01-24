@@ -1,11 +1,11 @@
 import { React } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import { DropdownLink } from './DropdownLink';
 import { AboutUsContent, ServicesContent } from './DropdownContents';
 
 export const NavBar = () => {
   return (
-    <nav className="xxs:hidden w-full justify-between font-serif lg:flex">
+    <nav className="w-full justify-between font-serif xxs:hidden lg:flex">
       <h1 className="place-content-center font-ubuntu text-xl font-bold hover:text-lightGreen">
         <NavLink to={'/'} className={'px-5 py-1'}>
           WHMC

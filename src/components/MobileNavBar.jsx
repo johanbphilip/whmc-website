@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';

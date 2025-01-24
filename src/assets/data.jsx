@@ -1,71 +1,71 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router';
 
 export const doctors = [
   {
-    name: "Dr. Li, Donna",
-    cpso: "91626",
-    daysWorked: "Tuesday, Friday, alternate Wednesdays and Saturdays",
-    image: "",
+    name: 'Dr. Li, Donna',
+    cpso: '91626',
+    daysWorked: 'Tuesday, Friday, alternate Wednesdays and Saturdays',
+    image: '',
   },
   {
-    name: "Dr. Al-Ward, Harith",
-    cpso: "85882",
-    daysWorked: "Monday, Thursday, Sunday, alternate Wednesdays",
-    image: "",
+    name: 'Dr. Al-Ward, Harith',
+    cpso: '85882',
+    daysWorked: 'Monday, Thursday, Sunday, alternate Wednesdays',
+    image: '',
   },
   {
-    name: "Dr. Lum, Bill",
-    cpso: "59734",
-    daysWorked: "Monday, Thursday, alternate Wednesdays and Saturdays",
-    image: "",
+    name: 'Dr. Lum, Bill',
+    cpso: '59734',
+    daysWorked: 'Monday, Thursday, alternate Wednesdays and Saturdays',
+    image: '',
   },
   {
-    name: "Dr. Abdallah, Barwaaqo",
-    cpso: "113645",
-    daysWorked: "",
-    image: "",
+    name: 'Dr. Abdallah, Barwaaqo',
+    cpso: '113645',
+    daysWorked: '',
+    image: '',
   },
   {
-    name: "Dr. Izzeldin, Abuelgasim",
-    cpso: "77362",
-    daysWorked: "",
-    image: "",
+    name: 'Dr. Izzeldin, Abuelgasim',
+    cpso: '77362',
+    daysWorked: '',
+    image: '',
   },
   {
-    name: "Dr. Lum, Jeffrey",
-    cpso: "65913",
-    daysWorked: "",
-    image: "",
+    name: 'Dr. Lum, Jeffrey',
+    cpso: '65913',
+    daysWorked: '',
+    image: '',
   },
 ];
 export const management = [
-  { name: "Al Zaghi", position: "Clinic Owner" },
-  { name: "Sheema Abdul Razzak", position: "Clinic Manager" },
+  { name: 'Al Zaghi', position: 'Clinic Owner' },
+  { name: 'Sheema Abdul Razzak', position: 'Clinic Manager' },
 ];
 export const ohipServices = [
-  "Vaccination",
-  "WSIB Forms",
-  "Specialist Referral",
-  "Prescription Refills",
-  "General Visits",
+  'Vaccination',
+  'WSIB Forms',
+  'Specialist Referral',
+  'Prescription Refills',
+  'General Visits',
 ];
 export const nonOhipServices = [
-  "TB Test",
-  "Driver’s Medical",
-  "Sick Notes",
-  "Ear Flush",
-  "TTC Form",
+  'TB Test',
+  'Driver’s Medical',
+  'Sick Notes',
+  'Ear Flush',
+  'TTC Form',
 ];
 
 export const plan = [
   {
-    summary: "What is your reason for visit?",
+    summary: 'What is your reason for visit?',
     detail: () => (
       <>
-        Check out our{" "}
-        <NavLink to="/services" className="hover:text-white underline">
+        Check out our{' '}
+        <NavLink to="/services" className="underline hover:text-white">
           Services
-        </NavLink>{" "}
+        </NavLink>{' '}
         page to see if a physician will see you for your reason. If it is not
         mentioned, you can contact the clinic at 905-428-8055 to see if you will
         be seen.
@@ -73,27 +73,27 @@ export const plan = [
     ),
   },
   {
-    summary: "Can a doctor on call assist you?",
+    summary: 'Can a doctor on call assist you?',
     detail:
       "While most of our physicians see all patients, there are exceptiosn for Driver's License forms, and physicals. If you are coming in for either of those, please contact contact the clinic at to see if the doctor on call can see you.",
   },
   {
-    summary: "What time will you be arriving?",
+    summary: 'What time will you be arriving?',
     detail: () => (
       <>
         Please ensure that you arrive at the clinic well before closing time in
         order to ensure that you will be seen. The clinic may stop taking
         patients prior to posted closing time if the capacity is reached. Please
-        refer to our{" "}
-        <NavLink to={"/hours"} className="hover:text-white underline">
+        refer to our{' '}
+        <NavLink to={'/hours'} className="underline hover:text-white">
           hours
-        </NavLink>{" "}
+        </NavLink>{' '}
         to see if we are still open.
       </>
     ),
   },
   {
-    summary: "What do I bring to the clinic?",
+    summary: 'What do I bring to the clinic?',
     detail: () => (
       <>
         1. A valid health card (if you are a OHIP patient) or $90 if you are a
@@ -105,7 +105,7 @@ export const plan = [
     ),
   },
   {
-    summary: "What should I expect at the clinic?",
+    summary: 'What should I expect at the clinic?',
     detail: () => (
       <>
         1. You will visit the front desk and they will instruct you to write
