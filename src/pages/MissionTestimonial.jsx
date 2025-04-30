@@ -6,11 +6,11 @@ import { Review } from '../components/Review';
 export const MissionTestimonial = () => {
   return (
     <main className="main-container">
-      <section className="xxs:px-5 xxs:py-20 xxs:text-xs flex h-screen flex-col items-center justify-center gap-10 rounded-xl bg-whiteGreen text-center xs:text-sm md:text-lg lg:px-40">
-        <h1 className="xxs:mt-10 xxs:text-4xl font-ubuntu font-semibold text-darkGreen xs:text-4xl md:my-20 md:text-6xl">
+      <section className="flex h-screen flex-col items-center justify-center gap-10 rounded-xl bg-whiteGreen text-center xxs:px-5 xxs:py-20 xxs:text-xs xs:text-sm md:text-lg lg:px-40">
+        <h1 className="font-ubuntu font-semibold text-darkGreen xxs:mt-10 xxs:text-4xl xs:text-4xl md:my-20 md:text-6xl">
           Our Mission.
         </h1>
-        <div className="xxs:mb-0 xxs:px-0 flex flex-col gap-10 md:mb-10 md:px-20">
+        <div className="flex flex-col gap-10 xxs:mb-0 xxs:px-0 md:mb-10 md:px-20">
           <p>
             Our mission is to provide compassionate, high-quality, and
             accessible healthcare to our community. We are committed to
@@ -27,7 +27,7 @@ export const MissionTestimonial = () => {
           </p>
         </div>
         <div className="flex flex-row gap-10">
-          <div className="scrollbar-hidden xxs:overflow-x-auto flex w-full items-center justify-evenly gap-10 md:overflow-hidden">
+          <div className="scrollbar-hidden flex w-full items-center justify-evenly gap-10 xxs:overflow-x-auto md:overflow-hidden">
             <img
               src={mission1}
               className="xxs:object-center-top w-80 transform rounded-lg object-cover shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-lg"
@@ -43,12 +43,12 @@ export const MissionTestimonial = () => {
           </div>
         </div>
       </section>
-      <h1 className="xxs:my-3 xxs:text-4xl text-center font-ubuntu font-semibold md:my-10 md:text-6xl">
-        Patient Testimonials.
+      <h1 className="text-center font-ubuntu font-semibold xxs:my-3 xxs:text-4xl md:my-10 md:text-6xl">
+        Patient Reviews.
       </h1>
-      <section className="xxs:p-3 relative flex h-3/4 w-full flex-col rounded-xl bg-darkGreen text-left text-darkGreen md:p-10">
-        <div className="flex gap-10">
-          <div className="scrollbar-hidden xxs:gap-5 xxs:px-2 xxs:py-5 flex overflow-x-auto md:gap-10 md:p-5">
+      {/* <section className="relative flex h-3/4 w-full flex-col rounded-xl bg-darkGreen text-left text-darkGreen xxs:p-3 md:p-10"> */}
+      {/* <div className="flex gap-10">
+          <div className="scrollbar-hidden flex overflow-x-auto xxs:gap-5 xxs:px-2 xxs:py-5 md:gap-10 md:p-5">
             <Review />
             <Review />
             <Review />
@@ -57,10 +57,14 @@ export const MissionTestimonial = () => {
             <Review />
           </div>
         </div>
-        <p className="md:text-normal xxs:bottom-2 xxs:right-5 xxs:text-xs absolute text-white md:bottom-5 md:right-10">
+        <p className="md:text-normal absolute text-white xxs:bottom-2 xxs:right-5 xxs:text-xs md:bottom-5 md:right-10">
           Scroll for more
-        </p>
-      </section>
+        </p> */}
+      {/* </section> */}
+      <div
+        className="elfsight-app-d3590001-494e-4f18-90d3-0702eb211baa"
+        data-elfsight-app-lazy
+      ></div>
     </main>
   );
 };

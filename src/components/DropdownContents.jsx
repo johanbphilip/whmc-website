@@ -8,11 +8,11 @@ export const AboutUsContent = () => {
         OUR TEAM
       </NavLink>
       <NavLink to={'/mission-testimonials'} className={'dropdown-hover'}>
-        MISSION & TESTIMONIALS
+        MISSION & REVIEWS
       </NavLink>
-      <NavLink to={'/policies'} className={'dropdown-hover'}>
+      {/* <NavLink to={'/policies'} className={'dropdown-hover'}>
         CLINIC POLICIES
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };
@@ -22,9 +22,9 @@ export const ServicesContent = () => {
       <NavLink to={'/our-services'} className={'dropdown-hover'}>
         OUR SERVICES
       </NavLink>
-      <NavLink to={'/clinic-policies'} className={'dropdown-hover'}>
+      {/* <NavLink to={'/clinic-policies'} className={'dropdown-hover'}>
         HEALTH RESOURCES
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

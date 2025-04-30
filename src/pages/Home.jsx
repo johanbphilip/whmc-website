@@ -17,7 +17,7 @@ export const Home = () => {
             Medical Centre
           </h1>
           <p className="md:text-md md:text-md text-lightGreen xxs:text-sm md:text-base">
-            See if Sheema has an ideas for a caption.
+            Your one-stop solution for your emergent care needs.
           </p>
           <div className="flex items-center gap-5">
             <NavLink

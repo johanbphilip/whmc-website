@@ -23,9 +23,17 @@ export const NavBar = () => {
         <DropdownLink href={'/our-team'} DropdownContent={AboutUsContent}>
           ABOUT US
         </DropdownLink>
-        <DropdownLink href={'/services'} DropdownContent={ServicesContent}>
+        {/* <DropdownLink href={'/services'} DropdownContent={ServicesContent}>
           SERVICES
-        </DropdownLink>
+        </DropdownLink> */}
+        <NavLink
+          className={
+            'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
+          }
+          href={'/services'}
+        >
+          SERVICES
+        </NavLink>
         <NavLink
           to={'/hours'}
           className={

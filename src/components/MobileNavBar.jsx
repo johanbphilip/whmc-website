@@ -63,7 +63,14 @@ export const MobileNavBar = () => {
             {isAboutUsDropDownOpen && (
               <AboutUsMobileContent closeAll={closeAll} />
             )}
-            <div
+            <NavLink
+              to={'/services'}
+              className={'nav-hover'}
+              onClick={closeAll}
+            >
+              SERVICES
+            </NavLink>
+            {/* <div
               className="nav-hover flex items-center"
               onClick={toggleServicesDropDownMenu}
             >
@@ -75,7 +82,7 @@ export const MobileNavBar = () => {
                   isServicesDropDownOpen ? 'rotate-180' : ''
                 }`}
               />
-            </div>
+            </div> */}
             {isServicesDropDownOpen && (
               <ServicesMobileContent closeAll={closeAll} />
             )}

@@ -16,15 +16,15 @@ export const AboutUsMobileContent = ({ closeAll }) => {
         className={'dropdown-hover text-sm'}
         onClick={closeAll}
       >
-        MISSION & TESTIMONIALS
+        MISSION & REVIEWS
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to={'/policies'}
         className={'dropdown-hover text-sm'}
         onClick={closeAll}
       >
         CLINIC POLICIES
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };
@@ -39,13 +39,13 @@ export const ServicesMobileContent = ({ closeAll }) => {
       >
         OUR SERVICES
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to={'/health-resources'}
         className={'dropdown-hover text-sm'}
         onClick={closeAll}
       >
         HEALTH RESOURCES
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };
