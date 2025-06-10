@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router';
+import { NavLink, redirect } from 'react-router';
 import docAndPatient from '../assets/doc-patient1.jpeg';
 import { BsArrowUpRightCircleFill } from 'react-icons/bs';
 import { MdKeyboardArrowRight } from 'react-icons/md';
@@ -47,7 +47,7 @@ export const Home = () => {
       <div className="absolute inset-x-0 -mt-0 justify-evenly overflow-hidden py-3 text-white xxs:hidden md:flex">
         <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
           <div className="flex flex-col gap-4 text-left text-xs">
-            <h2 className="font-ubuntu font-semibold xxs:text-xl lg:text-2xl">
+            <h2 className="font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
               Our Team
             </h2>
             <p className="xxs:text-xs lg:text-sm">
@@ -59,9 +59,9 @@ export const Home = () => {
             <BsArrowUpRightCircleFill className="fill-xs xxs:size-7 lg:size-10" />
           </NavLink>
         </div>
-        <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
+        <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-3 lg:py-3">
           <div className="flex flex-col gap-4 text-left text-xs">
-            <h2 className="xxs:text-md font-ubuntu font-semibold xxs:text-xl lg:text-2xl">
+            <h2 className="xxs:text-md font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
               Our Services
             </h2>
             <p className="xxs:text-xs lg:text-sm">
@@ -75,7 +75,7 @@ export const Home = () => {
         </div>
         <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
           <div className="flex flex-col gap-4 text-left text-xs">
-            <h2 className="font-ubuntu font-semibold xxs:text-xl lg:text-2xl">
+            <h2 className="font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
               Our Hours
             </h2>
             <p className="xxs:text-xs lg:text-sm">
@@ -83,7 +83,8 @@ export const Home = () => {
               information.
             </p>
           </div>
-          <NavLink to={'/hours'} className={'xxs:size-7 md:size-10'}>
+
+          <NavLink to={'/hours'} className={'text-start xxs:size-7 md:size-10'}>
             <BsArrowUpRightCircleFill className="fill-xs xxs:size-7 lg:size-10" />
           </NavLink>
         </div>

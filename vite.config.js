@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   // base: "/whmc-website", //repo name for gh-pages
   plugins: [react()],
+  server: {
+    historyApiFallback: true,
+  },
 });

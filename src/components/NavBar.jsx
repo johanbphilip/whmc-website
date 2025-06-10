@@ -30,7 +30,7 @@ export const NavBar = () => {
           className={
             'rounded-xl border border-transparent px-5 py-1 duration-200 ease-in hover:border-lightGreen hover:text-lightGreen'
           }
-          href={'/services'}
+          to={'/services'}
         >
           SERVICES
         </NavLink>
