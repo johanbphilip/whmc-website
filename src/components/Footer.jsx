@@ -44,7 +44,7 @@ export const Footer = () => {
             Plan A Visit
           </a>
 
-          <a href="/mission-testimonials" className="mobile-link">
+          <a href="/mission-testimonials#reviews" className="mobile-link">
             Reviews
           </a>
         </div>
@@ -77,6 +77,7 @@ export const Footer = () => {
         Designed by{' '}
         <a
           href="https://github.com/johanbphilip"
+          target="_blank"
           className="text-lightGreen hover:text-whiteGreen"
         >
           Johan Philip
@@ -86,6 +87,7 @@ export const Footer = () => {
         &copy; {year} WHMC | All Rights Reserved | Designed by{' '}
         <a
           href="https://github.com/johanbphilip"
+          target="_blank"
           className="text-lightGreen hover:text-whiteGreen"
         >
           Johan Philip

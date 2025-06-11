@@ -21,7 +21,7 @@ function App() {
           <Route path="hours" element={<Hours />} />
           <Route path="plan-a-visit" element={<PlanAVisit />} />
           <Route path="mission-testimonials" element={<MissionTestimonial />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
