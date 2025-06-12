@@ -17,7 +17,7 @@ export const Hours = () => {
         <meta og:description="We are open Monday through Sunday starting at 8am. Closing times may vary from posted hours depending on clinic capacity and wait times." />
         <meta
           property="og:image"
-          content="https://westneyheightsmedical.com/hours.png"
+          content="https://westneyheightsmedical.com/assets/hours.png"
         ></meta>
         <meta
           property="og:site_name"

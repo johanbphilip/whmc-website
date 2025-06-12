@@ -18,7 +18,7 @@ export const PlanAVisit = () => {
         <meta og:description="Thank you for choosing Westney Heights Medical Centre for your healthcare needs! To ensure that you have a satisfactory visit and that we meet all your needs, please refer to the questions below to ensure that you are well prepared for your visit." />
         <meta
           property="og:image"
-          content="https://westneyheightsmedical.com/plan-a-visit.png"
+          content="https://westneyheightsmedical.com/assets/plan-a-visit.png"
         ></meta>
         <meta
           property="og:site_name"

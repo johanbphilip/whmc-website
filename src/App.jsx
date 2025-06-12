@@ -10,7 +10,6 @@ import { MissionTestimonial } from './pages/MissionTestimonial';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
 function App() {
-  console.log('App.jsx has been loaded');
   return (
     <BrowserRouter>
       <Routes>
