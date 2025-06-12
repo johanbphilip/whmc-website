@@ -23,7 +23,10 @@ export const Team = () => {
         />
         <meta og:title="Our Team | WHMC" />
         <meta og:description="Meet our dedicated team of healthcare professionals at Westney Heights Medical Centre. Our physicians and management staff are committed to providing exceptional care and support to our patients." />
-        <meta property="og:image" content="./our-team.png"></meta>
+        <meta
+          property="og:image"
+          content="https://westneyheightsmedical.com/our-team.png"
+        ></meta>
         <meta
           property="og:site_name"
           content="Westney Heights Medical Centre"

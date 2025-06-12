@@ -19,7 +19,10 @@ export const MissionTestimonial = () => {
         /> */}
         <meta og:title="Mission & Testimonials | WHMC" />
         <meta og:description="WHMC aims to provide compassionate, high-quality, and accessible healthcare to our community. Read our mission statement and patient reviews to see how we will care for you." />
-        <meta property="og:image" content="./mission-testimonials.png"></meta>
+        <meta
+          property="og:image"
+          content="https://westneyheightsmedical.com/mission-testimonials.png"
+        ></meta>
         <meta
           property="og:site_name"
           content="Westney Heights Medical Centre"

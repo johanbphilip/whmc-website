@@ -15,7 +15,10 @@ export const Hours = () => {
         {/* <link rel="canonical" href="https://westneyheightsmedical.com/hours" /> */}
         <meta og:title="Hours | WHMC" />
         <meta og:description="We are open Monday through Sunday starting at 8am. Closing times may vary from posted hours depending on clinic capacity and wait times." />
-        <meta property="og:image" content="./hours.png"></meta>
+        <meta
+          property="og:image"
+          content="https://westneyheightsmedical.com/hours.png"
+        ></meta>
         <meta
           property="og:site_name"
           content="Westney Heights Medical Centre"

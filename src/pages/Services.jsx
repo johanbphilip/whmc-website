@@ -17,7 +17,10 @@ export const Services = () => {
         /> */}
         <meta og:title="Services | WHMC" />
         <meta og:description="At WHMC, we offer a range of services to meet your healthcare needs. Our OHIP services are fully covered by the Ontario Health Insurance Plan, while our non-OHIP services provide additional care options. We also have in-house providers for specialized care." />
-        <meta property="og:image" content="./our-services.png"></meta>
+        <meta
+          property="og:image"
+          content="https://westneyheightsmedical.com/our-services.png"
+        ></meta>
         <meta
           property="og:site_name"
           content="Westney Heights Medical Centre"

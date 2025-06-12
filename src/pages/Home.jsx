@@ -17,7 +17,10 @@ export const Home = () => {
         {/* <link rel="canonical" href="https://westneyheightsmedical.com/" /> */}
         <meta og:title="Westney Heights Medical Centre" />
         <meta og:description="Westney Heights Medical Centre is your one-stop solution for all your emergent care needs. Our team of dedicated physicians prioritize your health in a modern, clean and caring environment." />
-        <meta property="og:image" content="./home-preview.png"></meta>
+        <meta
+          property="og:image"
+          content="https://westneyheightsmedical.com/home-preview.png"
+        ></meta>
         <meta
           property="og:site_name"
           content="Westney Heights Medical Centre"
