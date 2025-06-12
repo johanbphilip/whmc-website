@@ -21,8 +21,18 @@ export const Team = () => {
           rel="canonical"
           href="https://westneyheightsmedical.com/our-team"
         />
-        <meta og:title="Services | WHMC" />
+        <meta og:title="Our Team | WHMC" />
         <meta og:description="Meet our dedicated team of healthcare professionals at Westney Heights Medical Centre. Our physicians and management staff are committed to providing exceptional care and support to our patients." />
+        <meta property="og:image" content="./our-team.png"></meta>
+        <meta
+          property="og:site_name"
+          content="Westney Heights Medical Centre"
+        ></meta>
+        <meta property="og:title" content="Our Team | WHMC"></meta>
+        <meta
+          property="og:url"
+          content="https://westneyheightsmedical.com/our-team"
+        ></meta>
       </Helmet>
       <main className="main-container">
         <h1 className="text-center font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:my-20 md:text-6xl">

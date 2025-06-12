@@ -14,9 +14,19 @@ export const Home = () => {
           name="description"
           content="Westney Heights Medical Centre is your one-stop solution for all your emergent care needs. Our team of dedicated physicians prioritize your health in a modern, clean and caring environment."
         />
-        <link rel="canonical" href="https://westneyheightsmedical.com/" />
+        {/* <link rel="canonical" href="https://westneyheightsmedical.com/" /> */}
         <meta og:title="Westney Heights Medical Centre" />
         <meta og:description="Westney Heights Medical Centre is your one-stop solution for all your emergent care needs. Our team of dedicated physicians prioritize your health in a modern, clean and caring environment." />
+        <meta property="og:image" content="./home-preview.png"></meta>
+        <meta
+          property="og:site_name"
+          content="Westney Heights Medical Centre"
+        ></meta>
+        <meta property="og:title" content="Home | WHMC"></meta>
+        <meta
+          property="og:url"
+          content="https://westneyheightsmedical.com/"
+        ></meta>
       </Helmet>
       <main className="main-container relative">
         <section className="flex h-screen items-center justify-evenly rounded-xl bg-darkGreen text-white xxs:flex-col xxs:gap-10 xxs:py-20 xxs:text-center md:gap-0 md:px-5 md:py-20 lg:flex-row lg:text-left">

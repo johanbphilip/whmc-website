@@ -11,13 +11,24 @@ export const Services = () => {
           name="description"
           content="At WHMC, we offer a range of services to meet your healthcare needs. Our OHIP services are fully covered by the Ontario Health Insurance Plan, while our non-OHIP services provide additional care options. We also have in-house providers for specialized care."
         />
-        <link
+        {/* <link
           rel="canonical"
           href="https://westneyheightsmedical.com/services"
-        />
+        /> */}
         <meta og:title="Services | WHMC" />
         <meta og:description="At WHMC, we offer a range of services to meet your healthcare needs. Our OHIP services are fully covered by the Ontario Health Insurance Plan, while our non-OHIP services provide additional care options. We also have in-house providers for specialized care." />
+        <meta property="og:image" content="./our-services.png"></meta>
+        <meta
+          property="og:site_name"
+          content="Westney Heights Medical Centre"
+        ></meta>
+        <meta property="og:title" content="Services | WHMC"></meta>
+        <meta
+          property="og:url"
+          content="https://westneyheightsmedical.com/services"
+        ></meta>
       </Helmet>
+
       <main className="main-container">
         <h1 className="text-center font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:my-20 md:text-6xl">
           Our Services.

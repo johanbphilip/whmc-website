@@ -13,12 +13,25 @@ export const MissionTestimonial = () => {
           name="description"
           content="WHMC aims to provide compassionate, high-quality, and accessible healthcare to our community. Read our mission statement and patient reviews to see how we will care for you."
         />
-        <link
+        {/* <link
           rel="canonical"
           href="https://westneyheightsmedical.com/mission-testimonials"
-        />
+        /> */}
         <meta og:title="Mission & Testimonials | WHMC" />
         <meta og:description="WHMC aims to provide compassionate, high-quality, and accessible healthcare to our community. Read our mission statement and patient reviews to see how we will care for you." />
+        <meta property="og:image" content="./mission-testimonials.png"></meta>
+        <meta
+          property="og:site_name"
+          content="Westney Heights Medical Centre"
+        ></meta>
+        <meta
+          property="og:title"
+          content="Mission & Testimonials | WHMC"
+        ></meta>
+        <meta
+          property="og:url"
+          content="https://westneyheightsmedical.com/mission-testimonials"
+        ></meta>
       </Helmet>
       <main className="main-container">
         <section className="flex h-screen flex-col items-center justify-center gap-10 rounded-xl bg-whiteGreen text-center xxs:px-5 xxs:py-20 xxs:text-xs xs:text-sm md:text-lg lg:px-40">
