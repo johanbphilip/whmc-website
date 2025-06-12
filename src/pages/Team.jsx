@@ -28,7 +28,7 @@ export const Team = () => {
         <h1 className="text-center font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:my-20 md:text-6xl">
           Physicians.
         </h1>
-        <section className="lg:px-36">
+        <section className="md:mb-20 lg:px-36">
           <div className="grid w-fit xxs:gap-5 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 lg:gap-10">
             {doctors.map((doctor, index) => (
               <Doctor doctor={doctor} key={index} />
