@@ -6,15 +6,15 @@ export const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services | WHMC</title>
+        <title>Services | Westney Heights Medical Centre</title>
         <meta
           name="description"
           content="At WHMC, we offer a range of services to meet your healthcare needs. Our OHIP services are fully covered by the Ontario Health Insurance Plan, while our non-OHIP services provide additional care options. We also have in-house providers for specialized care."
         />
-        {/* <link
+        <link
           rel="canonical"
           href="https://westneyheightsmedical.com/services"
-        /> */}
+        />
         <meta og:title="Services | WHMC" />
         <meta og:description="At WHMC, we offer a range of services to meet your healthcare needs. Our OHIP services are fully covered by the Ontario Health Insurance Plan, while our non-OHIP services provide additional care options. We also have in-house providers for specialized care." />
         <meta
@@ -38,9 +38,9 @@ export const Services = () => {
         </h1>
         <section className="flex w-full xxs:flex-col xxs:gap-5 md:mb-10 md:flex-row md:justify-evenly md:gap-10 lg:mb-0 lg:px-14 lg:py-20">
           <div className="flex flex-col gap-3 rounded-lg bg-darkGreen py-5 text-white xxs:px-5 md:px-10">
-            <h2 className="font-ubuntu text-2xl font-semibold">
+            <h3 className="font-ubuntu text-2xl font-semibold">
               OHIP Services
-            </h2>
+            </h3>
             <ul>
               {ohipServices.map((service, index) => (
                 <li key={index} className="md:text-normal mt-2 xxs:text-lg">
@@ -53,9 +53,9 @@ export const Services = () => {
             </p>
           </div>
           <div className="flex flex-col gap-3 rounded-lg bg-darkGreen py-5 text-white xxs:px-5 md:px-10">
-            <h2 className="font-ubuntu text-2xl font-semibold">
+            <h3 className="font-ubuntu text-2xl font-semibold">
               Non-OHIP Services
-            </h2>
+            </h3>
             <ul>
               {nonOhipServices.map((service, index) => (
                 <li key={index} className="md:text-normal mt-2 xxs:text-lg">
@@ -68,11 +68,10 @@ export const Services = () => {
             </p>
           </div>
         </section>
-        {/*//TODO: find a better alternative to In-house Local or Affiliated*/}
         <section className="flex w-full flex-col items-center gap-10 rounded-xl bg-whiteGreen xxs:justify-evenly xxs:px-5 xxs:py-10 md:justify-between md:px-10 md:py-20">
-          <h1 className="font-ubuntu font-bold xxs:text-4xl md:text-6xl">
+          <h2 className="font-ubuntu font-bold xxs:text-4xl md:text-6xl">
             In-House Providers
-          </h1>
+          </h2>
           <div className="flex w-full justify-evenly xxs:flex-col xxs:items-center xxs:gap-5 md:flex-row md:gap-10">
             <div className="flex w-full flex-col gap-3 rounded-lg bg-darkGreen px-5 py-5 text-left text-white">
               <p>Westney Spine Care & Wellness Centre</p>

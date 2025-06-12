@@ -9,9 +9,9 @@ export const Doctor = ({ doctor }) => {
         className="hover-images w-full rounded-lg object-cover md:h-80"
       ></img> */}
       <div className="flex w-full flex-col justify-evenly text-left xxs:gap-0 xxs:text-xs xs:text-sm md:gap-1 md:text-base lg:text-sm">
-        <h2 className="font-ubuntu font-medium text-lightGreen xxs:text-lg md:text-2xl">
+        <h3 className="font-ubuntu font-medium text-lightGreen xxs:text-lg md:text-2xl">
           {doctor.name}
-        </h2>
+        </h3>
         <p>
           <span className="font-ubuntu font-medium">CPSO: </span>
           {doctor.cpso}
@@ -32,9 +32,9 @@ export const Profile = ({ profile }) => {
         className="hover-images w-full rounded-lg object-cover md:h-80"
       ></img>
       <div className="flex w-full flex-col justify-evenly text-left xxs:gap-0 xxs:text-xs xs:text-sm md:gap-1 md:text-base lg:text-sm">
-        <h2 className="font-ubuntu font-medium text-lightGreen xxs:text-lg md:text-2xl">
+        <h3 className="font-ubuntu font-medium text-lightGreen xxs:text-lg md:text-2xl">
           {profile.name}
-        </h2>
+        </h3>
         <p>{profile.position}</p>
       </div>
     </div>

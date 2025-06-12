@@ -12,6 +12,7 @@ export const Home = () => {
         <img
           src={docAndPatient2}
           className="h-1/2 w-2/3 rounded-lg object-cover shadow-lg lg:hidden"
+          alt="image of a doctor with patient"
         />
         <div className="flex flex-col justify-center gap-5 xxs:items-center xxs:px-2 md:px-0 lg:items-start">
           <h1 className="font-ubuntu text-xs font-semibold xxs:text-4xl md:text-6xl lg:text-7xl">
@@ -44,14 +45,15 @@ export const Home = () => {
         <img
           src={docAndPatient2}
           className="xxs:object-center-top hover-images rounded-lg object-cover xxs:hidden md:h-4/5 md:w-80 lg:block"
+          alt="image of a doctor with patient"
         />
       </section>
       <div className="absolute inset-x-0 -mt-0 justify-evenly overflow-hidden py-3 text-white xxs:hidden md:flex">
         <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
           <div className="flex flex-col gap-4 text-left text-xs">
-            <h2 className="font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
+            <h3 className="font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
               Our Team
-            </h2>
+            </h3>
             <p className="xxs:text-xs lg:text-sm">
               Meet the team of doctors at Westney Heights Medical who will be
               treating you.
@@ -63,9 +65,9 @@ export const Home = () => {
         </div>
         <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-3 lg:py-3">
           <div className="flex flex-col gap-4 text-left text-xs">
-            <h2 className="xxs:text-md font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
+            <h3 className="xxs:text-md font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
               Our Services
-            </h2>
+            </h3>
             <p className="xxs:text-xs lg:text-sm">
               Checkout the wide variety of services offered at Westney Heights
               Medical Center.
@@ -77,9 +79,9 @@ export const Home = () => {
         </div>
         <div className="hover-images flex flex-col items-end justify-evenly rounded-xl bg-lightGreen xxs:p-2 md:size-44 lg:size-60 lg:px-5 lg:py-3">
           <div className="flex flex-col gap-4 text-left text-xs">
-            <h2 className="font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
+            <h3 className="font-ubuntu font-semibold xxs:text-xl lg:text-3xl">
               Our Hours
-            </h2>
+            </h3>
             <p className="xxs:text-xs lg:text-sm">
               Click below to learn more aobut our hours, location and contact
               information.
@@ -93,10 +95,10 @@ export const Home = () => {
       </div>
       <section className="flex items-center justify-evenly rounded-xl bg-whiteGreen xxs:h-fit xxs:flex-col xxs:gap-4 xxs:py-4 md:h-screen md:flex-row md:gap-0 md:py-0">
         <div className="flex flex-col gap-3 text-left xxs:w-fit xxs:px-4 xxs:text-sm md:w-1/2 md:px-0 md:text-base lg:text-lg">
-          <h1 className="font-ubuntu text-5xl font-bold text-lightGreen">
+          <h2 className="font-ubuntu text-5xl font-bold text-lightGreen">
             <span className="text-darkGreen"> Your Health </span>
             is Our Priority.
-          </h1>
+          </h2>
           <p>
             With dedicated physicians who prioritize your health care needs, you
             can rest assured that we will provide you with a comprehensive
@@ -116,6 +118,7 @@ export const Home = () => {
         <img
           src={docAndPatient}
           className="hover-images flex rounded-xl object-cover shadow-md xxs:relative xxs:h-40 xxs:w-60 md:h-80 md:w-80"
+          alt="image of a doctor with patient"
         />
       </section>
     </main>

@@ -8,15 +8,15 @@ export const MissionTestimonial = () => {
   return (
     <>
       <Helmet>
-        <title>Mission & Testimonials | WHMC</title>
+        <title>Mission & Testimonials | Westney Heights Medical Centre</title>
         <meta
           name="description"
           content="WHMC aims to provide compassionate, high-quality, and accessible healthcare to our community. Read our mission statement and patient reviews to see how we will care for you."
         />
-        {/* <link
+        <link
           rel="canonical"
           href="https://westneyheightsmedical.com/mission-testimonials"
-        /> */}
+        />
         <meta og:title="Mission & Testimonials | WHMC" />
         <meta og:description="WHMC aims to provide compassionate, high-quality, and accessible healthcare to our community. Read our mission statement and patient reviews to see how we will care for you." />
         <meta
@@ -74,30 +74,14 @@ export const MissionTestimonial = () => {
             </div>
           </div>
         </section>
-        <h1
+        <h2
           className="text-center font-ubuntu font-semibold xxs:my-3 xxs:text-4xl md:my-10 md:text-6xl"
           id="reviews"
         >
           Patient Reviews.
-        </h1>
-        {/* <section className="relative flex h-3/4 w-full flex-col rounded-xl bg-darkGreen text-left text-darkGreen xxs:p-3 md:p-10"> */}
-        {/* <div className="flex gap-10">
-          <div className="scrollbar-hidden flex overflow-x-auto xxs:gap-5 xxs:px-2 xxs:py-5 md:gap-10 md:p-5">
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-          </div>
-        </div>
-        <p className="md:text-normal absolute text-white xxs:bottom-2 xxs:right-5 xxs:text-xs md:bottom-5 md:right-10">
-          Scroll for more
-        </p> */}
-        {/* </section> */}
+        </h2>
         <div
           className="elfsight-app-d3590001-494e-4f18-90d3-0702eb211baa"
-          // id="reviews"
           data-elfsight-app-lazy
         ></div>
       </main>

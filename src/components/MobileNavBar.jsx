@@ -33,9 +33,9 @@ export const MobileNavBar = () => {
   };
   return (
     <>
-      <h1 className="ml-2 font-ubuntu text-2xl font-bold hover:text-lightGreen xxs:block lg:hidden">
+      <p className="ml-2 font-ubuntu text-2xl font-bold hover:text-lightGreen xxs:block lg:hidden">
         <NavLink to={'/'}>WHMC</NavLink>
-      </h1>
+      </p>
       {isMobileNavBarOpen && (
         <nav className="justify-top absolute right-0 top-0 flex h-screen w-3/4 flex-col items-center bg-white py-20 font-serif xxs:text-xl xs:text-2xl">
           <IoMdClose

@@ -12,7 +12,7 @@ export const Team = () => {
   return (
     <>
       <Helmet>
-        <title>Our Team | WHMC</title>
+        <title>Our Team | Westney Heights Medical Centre</title>
         <meta
           name="description"
           content="Meet our dedicated team of healthcare professionals at Westney Heights Medical Centre. Our physicians and management staff are committed to providing exceptional care and support to our patients."
@@ -39,9 +39,12 @@ export const Team = () => {
       </Helmet>
       <main className="main-container">
         <h1 className="text-center font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:my-20 md:text-6xl">
-          Physicians.
+          Our Team.
         </h1>
-        <section className="md:mb-20 lg:px-36">
+        <section className="rounded-xl border-2 md:mb-20 lg:px-36 lg:py-20">
+          <h2 className="text-center font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:mb-20 md:text-6xl">
+            Physicians.
+          </h2>
           <div className="grid w-fit xxs:gap-5 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 lg:gap-10">
             {doctors.map((doctor, index) => (
               <Doctor doctor={doctor} key={index} />
@@ -49,9 +52,9 @@ export const Team = () => {
           </div>
         </section>
         <section className="flex w-full flex-col place-items-center items-center rounded-xl bg-whiteGreen xxs:py-5 md:py-20">
-          <h1 className="font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:mb-20 md:text-6xl">
+          <h2 className="font-ubuntu font-bold xxs:my-10 xxs:text-4xl md:mb-20 md:text-6xl">
             Management.
-          </h1>
+          </h2>
           <div className="grid w-fit xxs:gap-5 xxs:px-5 md:grid-cols-2 md:grid-rows-1 md:gap-10 md:px-0">
             {management.map((profile, index) => (
               <Profile profile={profile} key={index} />

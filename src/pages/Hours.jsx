@@ -7,14 +7,17 @@ export const Hours = () => {
   return (
     <>
       <Helmet>
-        <title>Hours | WHMC</title>
+        <title>Hours | Westney Heights Medical Centre</title>
         <meta
           name="description"
           content="We are open Monday through Sunday starting at 8am. Closing times may vary from posted hours depending on clinic capacity and wait times."
         />
-        {/* <link rel="canonical" href="https://westneyheightsmedical.com/hours" /> */}
-        <meta og:title="Hours | WHMC" />
-        <meta og:description="We are open Monday through Sunday starting at 8am. Closing times may vary from posted hours depending on clinic capacity and wait times." />
+        <link rel="canonical" href="https://westneyheightsmedical.com/hours" />
+        <meta property="og:title" content="Hours | WHMC" />
+        <meta
+          property="og:description"
+          content="We are open Monday through Sunday starting at 8am. Closing times may vary from posted hours depending on clinic capacity and wait times."
+        />
         <meta
           property="og:image"
           content="https://westneyheightsmedical.com/assets/hours.png"

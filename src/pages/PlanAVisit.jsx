@@ -5,15 +5,15 @@ export const PlanAVisit = () => {
   return (
     <>
       <Helmet>
-        <title>Plan A Visit | WHMC</title>
+        <title>Plan A Visit | Westney Heights Medical Centre</title>
         <meta
           name="description"
           content="Thank you for choosing Westney Heights Medical Centre for your healthcare needs! To ensure that you have a satisfactory visit and that we meet all your needs, please refer to the questions below to ensure that you are well prepared for your visit."
         />
-        {/* <link
+        <link
           rel="canonical"
           href="https://westneyheightsmedical.com/plan-a-visit"
-        /> */}
+        />
         <meta og:title="Plan A Visit | WHMC" />
         <meta og:description="Thank you for choosing Westney Heights Medical Centre for your healthcare needs! To ensure that you have a satisfactory visit and that we meet all your needs, please refer to the questions below to ensure that you are well prepared for your visit." />
         <meta
